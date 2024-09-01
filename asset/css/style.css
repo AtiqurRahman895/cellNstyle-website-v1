@@ -1,0 +1,344 @@
+body {
+  margin: auto;
+  padding: auto;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Raleway", sans-serif !important;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 14px !important;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(110, 227, 255);
+  background: linear-gradient(180deg, rgba(110, 227, 255, 1) 0%, rgba(0, 255, 158, 1) 100%);
+  border-radius: 10px;
+}
+
+
+/* General CSS Start */
+.logo {
+  width: 60px;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+
+
+
+#preloader-active {
+  background-color: #ffffffff;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  z-index: 1 !important;
+}
+
+#loader {
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #9370DB;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+#loader:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #BA55D3;
+  -webkit-animation: spin 3s linear infinite;
+  animation: spin 3s linear infinite;
+}
+
+#loader:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #FF00FF;
+  -webkit-animation: spin 1.5s linear infinite;
+  animation: spin 1.5s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+
+
+/* General CSS End */
+
+/* ===== Navbar Start ===== */
+
+.active{
+  border-bottom: 1px solid;
+}
+.nav-item{
+  margin-right: 20px;
+}
+
+.nav-item > a{
+  font-weight: 500;
+  color: #000000 !important;
+}
+
+
+
+.dropdown-toggle::after {
+  transition: transform 0.3s ease;
+}
+
+.dropdown-toggle:hover::after {
+  transform: rotate(180deg);
+}
+
+.book-li{
+  margin-top: 9px;
+  margin-bottom: 9px;
+  list-style: none;
+}
+
+
+.book-repair-btn{
+  border: 1px solid #eaeaea;
+  background-color: #eaeaea;
+  padding: 15px 20px !important;
+  border-radius: 50px;
+  font-weight: 600 !important;
+}
+
+.book-repair-btn:hover{
+  border: 1px solid #FF00FF;
+  background-color: #ffffff;
+}
+
+
+
+/* ===== Navbar End ===== */
+
+
+
+
+
+.floating-social-media {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  padding: 14px 10px 0px 12px;
+  position: fixed;
+  right: 10px;
+  bottom: 45%;
+}
+
+.floating-icon i {
+  color: #5e5e5e;
+}
+
+.icon-1:hover {
+  color: #2d64fa;
+}
+
+.icon-2:hover {
+  color: rgb(235, 35, 68);
+}
+
+.icon-3:hover {
+  color: black;
+}
+
+.icon-4:hover {
+  color: rgb(255, 28, 46);
+}
+
+/* Hero Section Start */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ##### BOOTSTRAP CUSTOM CSS START ##### */
+
+.container,
+.container-fluid,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm,
+.custom-container {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+
+  .container-sm,
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 1420px !important;
+  }
+
+  .custom-container {
+    max-width: 1200px !important;
+  }
+}
+
+/* ##### BOOTSTRAP CUSTOM CSS END ##### */
+
+
+
+
+
+.navbar .megamenu {
+  padding: 1rem;
+}
+
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+
+  .navbar .has-megamenu {
+    position: static !important;
+  }
+
+  .navbar .megamenu {
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin-top: 0;
+    width: 1000px;
+    margin: auto;
+  }
+
+}
+
+/* ============ desktop view .end// ============ */
+
+/* ============ mobile view ============ */
+@media(max-width: 991px) {
+
+  .navbar.fixed-top .navbar-collapse,
+  .navbar.sticky-top .navbar-collapse {
+    overflow-y: auto;
+    max-height: 90vh;
+    margin-top: 10px;
+  }
+}
+
+
+
+
+.preloader {
+  background-color: #ffffffff;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  z-index: 1 !important;
+}
