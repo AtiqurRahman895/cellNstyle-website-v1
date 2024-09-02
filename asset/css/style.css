@@ -36,6 +36,18 @@ a {
 
 
 
+.preloader {
+  background-color: #ffffffff;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  z-index: 1 !important;
+}
 
 #preloader-active {
   background-color: #ffffffff;
@@ -121,22 +133,28 @@ a {
   }
 }
 
+.section-title{
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
 
 
 /* General CSS End */
 
 /* ===== Navbar Start ===== */
 
-.active{
+/* .active{
   border-bottom: 1px solid;
-}
-.nav-item{
+} */
+.nav-item {
   margin-right: 20px;
 }
 
-.nav-item > a{
+.nav-item>a {
   font-weight: 500;
-  color: #000000 !important;
+  color: black !important;
 }
 
 
@@ -149,29 +167,94 @@ a {
   transform: rotate(180deg);
 }
 
-.book-li{
-  margin-top: 9px;
+.book-li {
+  margin-top: 13px;
   margin-bottom: 9px;
   list-style: none;
 }
 
 
-.book-repair-btn{
-  border: 1px solid #eaeaea;
-  background-color: #eaeaea;
-  padding: 15px 20px !important;
+.book-repair-btn {
+  border: 1px solid #f7791e;
+  padding: 10px 15px !important;
   border-radius: 50px;
   font-weight: 600 !important;
 }
 
-.book-repair-btn:hover{
-  border: 1px solid #FF00FF;
-  background-color: #ffffff;
+.book-repair-btn:hover {
+  background-color: #fdede4;
 }
 
 
 
 /* ===== Navbar End ===== */
+
+/* Hero Section Start */
+
+.slider-image {
+  height: 500px;
+  object-fit: cover;
+}
+
+.slider-control-btn {
+  border: 1px solid #f7791e;
+  margin-right: 6px;
+  padding: 0px 10px;
+  border-radius: 50px;
+  background-color: #ffffff;
+  transition: .3s;
+}
+
+.slider-control-btn:hover {
+  background-color: #f7791e;
+  color: #ffffff;
+}
+
+.carousel-control-icon {
+  padding: 10px 15px;
+}
+
+.carousel-title {
+  font-size: 3rem;
+  font-weight: 700 !important;
+  padding-bottom: 2rem;
+}
+
+.carousel-title-design{
+  color: #f7791e;
+}
+
+.carousel-inner-btn {
+  border: 0px;
+  padding: 15px 30px;
+  border: 1px solid #f7791e;
+  background-color: #f7791e;
+  font-weight: 400;
+  color: #ffffff;
+  border-radius: 50px;
+  transition: .3s;
+}
+
+.carousel-inner-btn:hover {
+  border: 1px solid #f7791e;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -207,7 +290,37 @@ a {
   color: rgb(255, 28, 46);
 }
 
-/* Hero Section Start */
+/* Hero Section End */
+
+/* Home Page main part Start */
+
+.categories-images{
+  width: 150px !important;
+  margin: auto;
+  padding: 20px 0px 0px 0px;
+}
+
+
+.categories-box{
+  border-radius: 6px;
+  transition: .3s;
+}
+
+.c-arrow{
+  color: #f7791e;
+  font-size: 10px;
+  transition: .3s;
+}
+
+.categories-box:hover{
+  border: 1px solid #f7791e;
+  .c-arrow{
+    margin-left: 10px;
+  }
+}
+
+
+/* Home Page main part End */
 
 
 
@@ -296,9 +409,7 @@ a {
   padding: 1rem;
 }
 
-/* ============ desktop view ============ */
 @media all and (min-width: 992px) {
-
   .navbar .has-megamenu {
     position: static !important;
   }
@@ -311,12 +422,8 @@ a {
     width: 1000px;
     margin: auto;
   }
-
 }
 
-/* ============ desktop view .end// ============ */
-
-/* ============ mobile view ============ */
 @media(max-width: 991px) {
 
   .navbar.fixed-top .navbar-collapse,
@@ -327,18 +434,23 @@ a {
   }
 }
 
+/* Responsive For Mobile and Tab version */
 
 
+@media screen and (max-width: 992px) {
+  .carousel-content-box {
+    text-align: center;
+  }
 
-.preloader {
-  background-color: #ffffffff;
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: 0 auto;
-  z-index: 1 !important;
+  .carousel-btn-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .carousel-title {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+
+  }
 }

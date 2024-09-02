@@ -3,7 +3,7 @@
 (function ($) {
     "use strict"
     $(window).on('load', function () {
-      $('#preloader-active').delay(1000).fadeOut('');
+      $('#preloader-active').delay(500).fadeOut('');
       $('body').delay().css({
         'overflow': 'visible'
       });
