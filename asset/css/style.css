@@ -185,8 +185,33 @@ a {
   background-color: #fdede4;
 }
 
+.nav-repair-icon{
+  width: 40px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
 
+.text-decoration-underline:hover{
+  color: #f7791e !important;
+}
 
+.dropdown-categories-img{
+  width: 100px;
+  padding-bottom: 30px;
+}
+
+.nav-c-card{
+  position: relative;
+}
+.nav-c-text{
+  position: absolute;;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
 /* ===== Navbar End ===== */
 
 /* Hero Section Start */
@@ -415,9 +440,9 @@ a {
   }
 
   .navbar .megamenu {
+    font-size: 13px;
     left: 0;
     right: 0;
-    width: 100%;
     margin-top: 0;
     width: 1000px;
     margin: auto;
