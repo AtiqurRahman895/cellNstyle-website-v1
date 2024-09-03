@@ -1,3 +1,9 @@
+html {
+  --primaryColor: #f7791e;
+  --secondaryColor: rgba(247, 120, 30, 0.2);
+  --accentColor: rgba(247, 120, 30, 0.5);
+}
+
 body {
   margin: auto;
   padding: auto;
@@ -148,13 +154,25 @@ a {
 /* .active{
   border-bottom: 1px solid;
 } */
-.nav-item {
+/* .nav-item {
   margin-right: 20px;
+} */
+
+.headerSectionAnimation{
+  background: #ffffff33 !important;
+  backdrop-filter: blur(20px);
+}
+.headerSection:has(.show) {
+  backdrop-filter: none;
+
 }
 
 .nav-item>a {
   font-weight: 500;
   color: black !important;
+}
+.nav-item>a:hover {
+  color: var(--primaryColor) !important;
 }
 
 
@@ -175,7 +193,7 @@ a {
 
 
 .book-repair-btn {
-  border: 1px solid #f7791e;
+  border: 1px solid var(--primaryColor);
   padding: 10px 15px !important;
   border-radius: 50px;
   font-weight: 600 !important;
@@ -192,7 +210,7 @@ a {
 }
 
 .text-decoration-underline:hover{
-  color: #f7791e !important;
+  color: var(--primaryColor) !important;
 }
 
 .dropdown-categories-img{
@@ -212,6 +230,13 @@ a {
   align-items: end;
   justify-content: center;
 }
+
+.navbar-toggler:focus {
+  text-decoration: none;
+  /* border: 1px solid !important; */
+  outline: 1px solid !important;
+  box-shadow: none !important;
+}
 /* ===== Navbar End ===== */
 
 /* Hero Section Start */
@@ -222,7 +247,7 @@ a {
 }
 
 .slider-control-btn {
-  border: 1px solid #f7791e;
+  border: 1px solid var(--primaryColor);
   margin-right: 6px;
   padding: 0px 10px;
   border-radius: 50px;
@@ -231,7 +256,7 @@ a {
 }
 
 .slider-control-btn:hover {
-  background-color: #f7791e;
+  background-color: var(--primaryColor);
   color: #ffffff;
 }
 
@@ -246,14 +271,14 @@ a {
 }
 
 .carousel-title-design{
-  color: #f7791e;
+  color: var(--primaryColor);
 }
 
 .carousel-inner-btn {
   border: 0px;
   padding: 15px 30px;
-  border: 1px solid #f7791e;
-  background-color: #f7791e;
+  border: 1px solid var(--primaryColor);
+  background-color: var(--primaryColor);
   font-weight: 400;
   color: #ffffff;
   border-radius: 50px;
@@ -261,7 +286,7 @@ a {
 }
 
 .carousel-inner-btn:hover {
-  border: 1px solid #f7791e;
+  border: 1px solid var(--primaryColor);
   background-color: #ffffff;
   color: #000000;
 }
@@ -332,13 +357,15 @@ a {
 }
 
 .c-arrow{
-  color: #f7791e;
+  color: var(--primaryColor);
   font-size: 10px;
   transition: .3s;
 }
 
 .categories-box:hover{
-  border: 1px solid #f7791e;
+  border: 1px solid var(--primaryColor);
+  box-shadow: 0 10px 15px 3px var(--secondaryColor) !important;
+
   .c-arrow{
     margin-left: 10px;
   }
