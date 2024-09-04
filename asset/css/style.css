@@ -3,6 +3,9 @@ html {
   --secondaryColor: rgba(247, 120, 30, 0.2);
   --accentColor: rgba(247, 120, 30, 0.5);
 }
+*{
+  scroll-behavior: smooth;
+}
 
 body {
   margin: auto;
@@ -143,6 +146,10 @@ a {
   font-size: 2rem;
   font-weight: 700;
   text-align: center;
+}
+.section-subtext{
+  margin-inline: auto;
+  max-width: 700px;
 }
 
 
@@ -373,6 +380,21 @@ a {
 
 
 /* Home Page main part End */
+
+/* Feature Section start */
+
+.featureCard {
+  width: 100%;
+  max-width: 320px;
+  flex: 1 0 auto !important;
+  border: none !important;
+  border-radius: 10px !important;
+}
+.featureCard {
+  color: white !important;
+}
+
+/* Feature Section end */
 
 
 
