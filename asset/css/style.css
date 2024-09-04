@@ -41,6 +41,7 @@ body {
 
 a {
   text-decoration: none !important;
+  color: #212529 !important;
 }
 
 
@@ -371,7 +372,7 @@ a {
 
 .categories-box:hover{
   border: 1px solid var(--primaryColor);
-  box-shadow: 0 10px 15px 3px var(--secondaryColor) !important;
+  box-shadow: 0 10px 20px 3px var(--secondaryColor) !important;
 
   .c-arrow{
     margin-left: 10px;
@@ -396,7 +397,22 @@ a {
 
 /* Feature Section end */
 
+/* Footer Section start */
 
+.footer a:hover{
+  transition: 0.5s;
+  font-weight: 600;
+  color: var(--primaryColor) !important;
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+
+  .footerSubtext{
+    max-width: 500px;
+  }
+}
+
+/* Footer Section end */
 
 /* Next page css start... */
 
