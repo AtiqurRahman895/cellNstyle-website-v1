@@ -397,6 +397,27 @@ a {
 
 /* Feature Section end */
 
+/* Blog section start */
+
+.blogCardImage{
+  width: 100%;
+  aspect-ratio: 3/1.5;
+}
+.commonBtn{
+  width: fit-content;
+  margin: auto;
+  text-wrap: nowrap;
+  
+}
+.commonBtn:hover .c-arrow{
+  padding-left: 0.5rem;
+
+}
+
+
+
+/* Blog section end */
+
 /* FAQ section */
 
 .eachFAQ:has(.show) button{
@@ -423,11 +444,9 @@ a {
 .FAQanswer{
   color: var(--primaryColor);
 }
-/* .moreFAQcollapseToggler{
-  display: none;
-} */
 .moreFAQshowToggler{
   display: none;
+  cursor: pointer;
 }
 .moreFAQtogglerWrapper:has(.collapsed) .moreFAQcollapseToggler{
   display: none;
@@ -438,9 +457,6 @@ a {
 
 .moreFAQtoggler .c-arrow{
   font-size: 0.8rem;
-}
-.moreFAQtoggler:hover .c-arrow{
-  padding-left: 0.3rem;
 }
 
 /* FAQ section */
