@@ -52,52 +52,49 @@ let sliderContent = document.querySelectorAll(`.sliderContent`);
 setInterval(() => {
   if (heroSection.clientWidth >= 768) {
     heroWrapper.classList.add("container");
-    sliderContent.forEach((eachSliderContent)=>{
+    sliderContent.forEach((eachSliderContent) => {
       eachSliderContent.classList.remove("container");
-    })
-
-  }else{
+    });
+  } else {
     heroWrapper.classList.remove("container");
-    sliderContent.forEach((eachSliderContent)=>{
+    sliderContent.forEach((eachSliderContent) => {
       eachSliderContent.classList.add("container");
-    })
-
+    });
   }
 }, 1000);
-
 
 // slider
 
 let slider = document.querySelectorAll(`.slider`);
 let firstCardWidth = document.querySelectorAll(`.firstCard`);
-let prevButton = document.querySelectorAll(`.prevButton`);
-let nextButton = document.querySelectorAll(`.nextButton`);
+let sliderPrevButton = document.querySelectorAll(`.sliderPrevButton`);
+let sliderNextButton = document.querySelectorAll(`.sliderNextButton`);
 
 // console.log(slider[0].scrollWidth)
 // console.log(slider[0].clientWidth)
 
-nextButton.forEach((eachNextButton, index) => {
+sliderNextButton.forEach((eachSliderNextButton, index) => {
   setInterval(() => {
     if (slider[index].scrollWidth <= slider[index].clientWidth) {
-      nextButton[index].style.display = `none`;
+      sliderNextButton[index].style.display = `none`;
     } else {
-      nextButton[index].style.display = `inline-block`;
+      sliderNextButton[index].style.display = `inline-block`;
     }
   }, 1000);
 
-  eachNextButton.addEventListener(`click`, (e) => {
+  eachSliderNextButton.addEventListener(`click`, (e) => {
     slider[index].scrollLeft += firstCardWidth[index].offsetWidth;
   });
 });
-prevButton.forEach((eachPrevButton, index) => {
+sliderPrevButton.forEach((eachSliderPrevButton, index) => {
   setInterval(() => {
     if (slider[index].scrollWidth <= slider[index].clientWidth) {
-      prevButton[index].style.display = `none`;
+      sliderPrevButton[index].style.display = `none`;
     } else {
-      prevButton[index].style.display = `inline-block`;
+      sliderPrevButton[index].style.display = `inline-block`;
     }
   }, 1000);
-  eachPrevButton.addEventListener(`click`, (e) => {
+  eachSliderPrevButton.addEventListener(`click`, (e) => {
     slider[index].scrollLeft += -firstCardWidth[index].offsetWidth;
   });
 });
