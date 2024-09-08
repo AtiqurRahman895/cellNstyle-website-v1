@@ -325,7 +325,8 @@ a {
   padding: 14px 10px 0px 12px;
   position: fixed;
   right: 10px;
-  top: 45%;
+  bottom: 10%;
+  z-index: 20;
 }
 
 .floating-icon i {
