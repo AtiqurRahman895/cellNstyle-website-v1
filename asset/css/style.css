@@ -325,26 +325,43 @@ a {
   padding: 14px 10px 0px 12px;
   position: fixed;
   right: 10px;
-  bottom: 45%;
+  top: 45%;
 }
 
 .floating-icon i {
-  color: #5e5e5e;
+  font-size: 1.2rem;
+  /* color: #5e5e5e; */
 }
 
-.icon-1:hover {
-  color: #2d64fa;
+/* .icon-1:hover {
+  color: 	#25D366;
 }
 
 .icon-2:hover {
-  color: rgb(235, 35, 68);
+  color: 	#1877F2;
 }
 
 .icon-3:hover {
-  color: black;
+  color: rgb(235, 35, 68);
 }
 
 .icon-4:hover {
+  color: rgb(255, 28, 46);
+} */
+
+.icon-1 {
+  color: 	#25D366;
+}
+
+.icon-2 {
+  color: 	#1877F2;
+}
+
+.icon-3 {
+  color: rgb(235, 35, 68);
+}
+
+.icon-4 {
   color: rgb(255, 28, 46);
 }
 
@@ -389,13 +406,38 @@ a {
   max-width: 320px;
   flex: 1 0 auto !important;
   border: none !important;
-  border-radius: 10px !important;
 }
 .featureCard {
   color: white !important;
 }
 
 /* Feature Section end */
+
+/* accessories Section start*/
+
+.eachAccessoryType input{
+  display: none;
+}
+
+.eachAccessoryType:has(input:checked){
+  transition: 0.5s;
+  color: var(--primaryColor);
+  border-bottom: 2px solid var(--accentColor);
+  transform: scale(1.03);
+}
+
+.accessoriesSliderWrapper .featureCard{
+  max-width: 220px;
+}
+
+@media (min-width: 992px) {
+
+  .accessoriesSliderWrapper{
+    background: hsla(0, 0%, 50%, 0.1);
+  }
+}
+
+/* accessories Section end*/
 
 /* Review section start */
 
