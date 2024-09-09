@@ -43,6 +43,9 @@ a {
   text-decoration: none !important;
   color: #212529 !important;
 }
+h1,h2,h3,h4,h5,h6{
+  font-weight: 600;
+}
 
 
 
@@ -563,10 +566,20 @@ input,textarea,select{
 
   .serviceSelection{
     width: 70% !important;
+    height: 100svh;
+    overflow-y: auto;
+    padding-inline: 5px 1rem;
   }
   .serviceSummary{
     width: 30% !important;
+    /* min-width: 360px !important; */
+    height: 100svh;
+    overflow-y: auto;
+    padding-left: 1rem;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; 
   }
+
 }
 
 .DeviceProblemWrapper{
@@ -601,6 +614,33 @@ input,textarea,select{
 }
 
 .serviceReciveMethodDetails{
+  display: none !important;
+}
+
+.deviceBrandModel, .DeviceProblem, .method, .customerInfo, .termsConditon{
+  position: relative;
+  transition: 0.5s;
+  transform-origin: top;
+
+}
+.deviceBrandModel:has(select:invalid, input:invalid, textarea:invalid) ~ .DeviceProblem{
+  position: absolute;
+  transform: scaleY(0);
+}
+.DeviceProblem:has(select:invalid, input:invalid, textarea:invalid) ~ .method, .showMethod{
+  position: absolute;
+  transform: scaleY(0);
+}
+
+.method:has(select:invalid, input:invalid, textarea:invalid) ~ .customerInfo{
+  position: absolute;
+  transform: scaleY(0);
+}
+.customerInfo:has(select:invalid, input:invalid, textarea:invalid) ~ .termsConditon{
+  position: absolute;
+  transform: scaleY(0);
+}
+.customerInfo:has(select:invalid, input:invalid, textarea:invalid) ~ .formButtons{
   display: none !important;
 }
 
