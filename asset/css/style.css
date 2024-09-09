@@ -442,13 +442,13 @@ a {
 
 /* Review section start */
 
-input,textarea{
-  border: 1px solid var(--primaryColor);
+input,textarea,select{
+  border: 1px solid black !important;
   border-radius: 10px;
   width: 100%;
   outline: none;
   padding: 1rem;
-  background-color: var(--secondaryColor);
+  /* background-color: var(--secondaryColor); */
   color: inherit;
 }
 .resetBtn{
@@ -550,6 +550,62 @@ input,textarea{
 /* Footer Section end */
 
 /* Next page css start... */
+
+/* Repair page start */
+.serviceSelection{
+  width: 100%;
+}
+.serviceSummary{
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+
+  .serviceSelection{
+    width: 70% !important;
+  }
+  .serviceSummary{
+    width: 30% !important;
+  }
+}
+
+.DeviceProblemWrapper{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 576px) {
+
+  .DeviceProblemWrapper{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+
+  .DeviceProblemWrapper{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.serviceReciveMethodWrapper{
+  border: 1px solid black;
+  transition: 0.5s;
+
+}
+.serviceReciveMethodWrapper:has(input:checked){
+  border: 1px solid var(--accentColor) !important;
+  background: var(--secondaryColor);
+  
+}
+
+.serviceReciveMethodDetails{
+  display: none !important;
+}
+
+
+/* Repair page end */
 
 
 
