@@ -47,6 +47,24 @@ h1,h2,h3,h4,h5,h6{
   font-weight: 600;
 }
 
+input,textarea,select{
+  border: 1px solid rgb(151, 151, 151)!important;
+  border-radius: 10px;
+  width: 100%;
+  outline: none;
+  padding: 1rem;
+  /* background-color: var(--secondaryColor); */
+  color: inherit;
+}
+input:hover,textarea:hover,select:hover{
+  border: 1px solid black!important;
+
+}
+input:focus,textarea:focus,select:focus{
+  border: 1.5px solid black!important;
+
+}
+
 
 
 .preloader {
@@ -154,6 +172,14 @@ h1,h2,h3,h4,h5,h6{
 .section-subtext{
   margin-inline: auto;
   max-width: 700px;
+}
+
+.eachContent {
+  border-bottom: 1px solid rgba(154, 154, 154, 0.361);
+}
+
+.eachContent:last-child {
+  border-bottom: none;
 }
 
 
@@ -405,13 +431,13 @@ h1,h2,h3,h4,h5,h6{
 
 /* Feature Section start */
 
-.featureCard {
+.sliderCard {
   width: 100%;
   max-width: 320px;
   flex: 1 0 auto !important;
   border: none !important;
 }
-.featureCard {
+.sliderCard {
   color: white !important;
 }
 
@@ -430,7 +456,7 @@ h1,h2,h3,h4,h5,h6{
   transform: scale(1.03);
 }
 
-.accessoriesSliderWrapper .featureCard{
+.accessoriesSliderWrapper .sliderCard{
   max-width: 220px;
 }
 
@@ -444,24 +470,6 @@ h1,h2,h3,h4,h5,h6{
 /* accessories Section end*/
 
 /* Review section start */
-
-input,textarea,select{
-  border: 1px solid rgb(151, 151, 151)!important;
-  border-radius: 10px;
-  width: 100%;
-  outline: none;
-  padding: 1rem;
-  /* background-color: var(--secondaryColor); */
-  color: inherit;
-}
-input:hover,textarea:hover,select:hover{
-  border: 1px solid black!important;
-
-}
-input:focus,textarea:focus,select:focus{
-  border: 1.5px solid black!important;
-
-}
 
 .resetBtn{
   border: 1px solid var(--primaryColor);
@@ -654,6 +662,80 @@ input:focus,textarea:focus,select:focus{
 
 
 /* Repair page end */
+
+
+/* Products Page Start */
+
+/* contents */
+
+.productsContents {
+  max-width: 1440px !important;
+}
+.productsContentsWrapper {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 576px) {
+  .productsContentsWrapper {
+    flex-direction: row;
+    height: 88svh !important;
+  }
+  .productsSidebar {
+    max-width: 190px;
+  }
+}
+
+.allProducts{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+
+}
+.allProducts .card:hover{
+  border: 1px solid var(--primaryColor) !important;
+  box-shadow: 0 10px 20px 3px var(--secondaryColor) !important;
+
+}
+
+@media (min-width: 576px) {
+
+  .allProducts{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+
+  .allProducts{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+
+  .allProducts{
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.productsCategories label:has(.eachProductsCategory:checked) p {
+  color: var(--primaryColor) !important;
+}
+.productsCategories label:has(.eachProductsCategory:checked) i {
+  color: var(--primaryColor) !important;
+}
+
+
+/* details */
+
+/* .detailsToggleAnimation {
+  display: none;
+}
+.togglerAnimation {
+  color: var(--primaryColor) !important;
+} */
+
+/* Products Page End */
 
 
 
