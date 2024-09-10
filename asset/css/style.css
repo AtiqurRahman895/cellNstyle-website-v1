@@ -1,7 +1,7 @@
 html {
-  --primaryColor: #f7791e;
-  --secondaryColor: rgba(247, 120, 30, 0.15);
-  --accentColor: rgba(247, 120, 30, 0.5);
+  --primaryColor: #0D6EFD;
+  --secondaryColor: rgba(13, 109, 253, 0.15);
+  --accentColor: rgba(13, 109, 253, 0.5);
 }
 *{
   scroll-behavior: smooth;
@@ -45,6 +45,7 @@ a {
 }
 h1,h2,h3,h4,h5,h6{
   font-weight: 600;
+  /* margin: 0px !important; */
 }
 
 input,textarea,select{
@@ -419,7 +420,7 @@ input:focus,textarea:focus,select:focus{
 
 .categories-box:hover{
   border: 1px solid var(--primaryColor);
-  box-shadow: 0 10px 20px 3px var(--secondaryColor) !important;
+  /* box-shadow: 0 10px 20px 3px var(--secondaryColor) !important; */
 
   .c-arrow{
     margin-left: 10px;
@@ -629,6 +630,7 @@ input:focus,textarea:focus,select:focus{
   
 }
 
+
 .serviceReciveMethodDetails{
   display: none !important;
 }
@@ -656,8 +658,14 @@ input:focus,textarea:focus,select:focus{
   position: absolute;
   transform: scaleY(0);
 }
-.customerInfo:has(select:invalid, input:invalid, textarea:invalid) ~ .formButtons{
+.customerInfo:has(select:invalid, input:invalid, textarea:invalid) ~ .formButtons .summitButton{
   display: none !important;
+}
+.formButtons .nextButton{
+  display: none !important;
+}
+.customerInfo:has(select:invalid, input:invalid, textarea:invalid) ~ .formButtons .nextButton{
+  display: inline-block !important;
 }
 
 
@@ -693,7 +701,7 @@ input:focus,textarea:focus,select:focus{
 }
 .allProducts .card:hover{
   border: 1px solid var(--primaryColor) !important;
-  box-shadow: 0 10px 20px 3px var(--secondaryColor) !important;
+  /* box-shadow: 0 10px 20px 3px var(--secondaryColor) !important; */
 
 }
 
