@@ -61,14 +61,10 @@
 
 <body class="d-flex flex-column h-100 ">
 
-    <!-- <div id="preloader-active">
+
+    <!-- <div class="preloader" id="preloader-active">
         <div id="loader"></div>
     </div> -->
-
-
-    <div class="preloader" id="preloader-active">
-        <div id="loader"></div>
-    </div>
 
 
     <header class="headerSection fixed-top">
@@ -715,7 +711,7 @@
                         <div class="termsConditon form-check d-flex align-items-center gap-2">
                             <input class="termsAndConditions form-check-input p-2" type="checkbox" value="termsAndConditions" id="termsAndConditions" required>
                             <label class="form-check-label" for="termsAndConditions">
-                              Agree to terms and conditions
+                              Agree to <a href="./termsConditions.html" style="color: var(--primaryColor) !important;">Terms & Conditions</a>
                             </label>
                         </div>
 
@@ -736,15 +732,27 @@
                         <div class="d-flex flex-wrap gap-3 align-items-center">
                             <img src="./asset/images/categories-images/mobile.webp" alt="Device Image" style="width: 70px; aspect-ratio: 3/2;" class="">
                             <div class="">
-                                <b>Broken Screen</b>
-                                <p class="m-0">iPhone 15 Pro Max</p>
+                                <p class="mb-1">iPhone 15 Pro Max</p>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <b>Broken Screen</b>
+                                    <b>Short Battery Life</b>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="d-flex flex-column gap-4 py-4"  style="border-block: 2px solid var(--accentColor);">
+                    <div class="d-flex flex-column gap-3 pt-4"  style="border-top: 2px solid var(--accentColor);">
+                        <h5>Pricing details</h5>
+                        <div class="d-flex gap-3"><h6 style="color: var(--primaryColor);">Due:</h6><b>0$</b></div>
+                        <p class="p-3 rounded-2" style="background: var(--secondaryColor);">
+                            we will inform you of the final cost either by phone or discuss in-store.
+                        </p>
+                        
+                    </div>
+
+                    <div class="d-flex flex-column gap-3 py-4"  style="border-block: 2px solid var(--accentColor);">
                         <h5>Visit details</h5>
-                        <div class="d-flex flex-wrap gap-3 align-items-center">
+                        <div class="d-flex gap-3 align-items-center">
                             <i class="fa-duotone fa-solid fa-map-location-dot" style="font-size: 1rem;"></i>
                             <div class="">
                                 <h6 style="color: var(--primaryColor);">Location you choosed</h6>
@@ -752,8 +760,8 @@
                             </div>
                         </div>
 
-                        <div class="d-flex flex-wrap gap-3 align-items-center">
-                            <i class="fa-duotone fa-solid fa-map-location-dot" style="font-size: 1rem;"></i>
+                        <div class="d-flex gap-3 align-items-center">
+                            <i class="fa-duotone fa-solid fa-calendar-clock" style="font-size: 1rem;"></i>
                             <div class="">
                                 <h6 style="color: var(--primaryColor);">Date and time</h6>
                                 <b>12am-2am</b>
@@ -761,16 +769,16 @@
                             </div>
                         </div>
 
-                        <div class="d-flex flex-wrap gap-3 align-items-center">
-                            <i class="fa-duotone fa-solid fa-map-location-dot" style="font-size: 1rem;"></i>
+                        <div class="d-flex gap-3 align-items-center">
+                            <i class="fa-duotone fa-solid fa-messages" style="font-size: 1rem;"></i>
                             <div class="">
                                 <h6 style="color: var(--primaryColor);">Contact details</h6>
                                 <b>emonhassan895@gmail.com</b>
                                 <p class="m-0">213-876-5432</p>
                             </div>
                         </div>
-                        <div class="d-flex flex-wrap gap-3 align-items-center">
-                            <i class="fa-duotone fa-solid fa-map-location-dot" style="font-size: 1rem;"></i>
+                        <div class="d-flex gap-3 align-items-center">
+                            <i class="fa-duotone fa-solid fa-credit-card" style="font-size: 1rem;"></i>
                             <div class="">
                                 <h6 style="color: var(--primaryColor);">Payment method</h6>
                             </div>
@@ -867,7 +875,7 @@
                                 <div class="d-flex flex-column gap-3">
                                     <a href="">Phone</a>
                                     <a href="">Tab</a>
-                                    <a href="">Laptop / Computer</a>
+                                    <a href="">Computer</a>
                                     <a href="">Console</a>
                                     <a href="">Headset</a>
                                     <a href="">Something else</a>
@@ -878,13 +886,12 @@
                             <div class="d-flex flex-column gap-3" style="width: fit-content;">
                                 <h4 style="font-weight: 600;">Important Links</h4>
                                 <div class="d-flex flex-column gap-3">
+                                    <a href="./termsConditions.html">Terms & Conditions</a>
                                     <a href="">About</a>
                                     <a href="">Repair Service</a>
                                     <a href="">Accessories</a>
                                     <a href="">Sell</a>
                                     <a href="">Our Team</a>
-                                    <a href="">Contact</a>
-            
                                 </div>
                             </div>
     
