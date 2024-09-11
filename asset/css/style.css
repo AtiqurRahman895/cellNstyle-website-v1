@@ -746,13 +746,23 @@ input:focus,textarea:focus,select:focus{
 /* Products Page End */
 
 
+/* Blogs Page start */
+
+.blogsWrapper{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
 
 
+@media (min-width: 992px) {
 
+  .blogsWrapper{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
-
-
-
+/* Blogs Page end */
 
 
 
