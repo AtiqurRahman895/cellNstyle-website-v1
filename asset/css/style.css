@@ -764,6 +764,19 @@ input:focus,textarea:focus,select:focus{
 
 /* Blogs Page end */
 
+/* Terms And Conditions section start */
+
+@media (min-width: 992px) {
+
+  .termsConditionSection{
+    width: 70% !important;
+    margin: auto;
+  }
+  
+}
+
+/* Terms And Conditions section end */
+
 
 
 
