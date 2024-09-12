@@ -1,26 +1,26 @@
 // hero section
 
-let heroSection = document.querySelector(`.heroSection`);
-let heroWrapper = document.querySelector(`.heroWrapper`);
-let sliderContent = document.querySelectorAll(`.sliderContent`);
+// let heroSection = document.querySelector(`.heroSection`);
+// let heroWrapper = document.querySelector(`.heroWrapper`);
+// let sliderContent = document.querySelectorAll(`.sliderContent`);
 
 // console.log(heroSection.scrollWidth);
 // console.log(heroSection.offsetWidth);
 // console.log(heroSection.clientWidth);
 
-setInterval(() => {
-  if (heroSection.clientWidth >= 768) {
-    heroWrapper.classList.add("container");
-    sliderContent.forEach((eachSliderContent) => {
-      eachSliderContent.classList.remove("container");
-    });
-  } else {
-    heroWrapper.classList.remove("container");
-    sliderContent.forEach((eachSliderContent) => {
-      eachSliderContent.classList.add("container");
-    });
-  }
-}, 1000);
+// setInterval(() => {
+//   if (heroSection.clientWidth >= 768) {
+//     heroWrapper.classList.add("container");
+//     sliderContent.forEach((eachSliderContent) => {
+//       eachSliderContent.classList.remove("container");
+//     });
+//   } else {
+//     heroWrapper.classList.remove("container");
+//     sliderContent.forEach((eachSliderContent) => {
+//       eachSliderContent.classList.add("container");
+//     });
+//   }
+// }, 1000);
 
 // slider
 
