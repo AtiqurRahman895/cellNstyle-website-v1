@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | CELLNSTYLE</title>
-    <link rel="stylesheet" href="asset/css/style.css">
+    <title>Black Home | CELLNSTYLE</title>
+    <link rel="stylesheet" href="asset/css/blackHomeStyle.css">
 
     <!-- EXTERNAL CSS LINK -->
     <!-- Bootstrap CSS -->
@@ -71,29 +71,29 @@
     </div> -->
 
 
-    <header class="headerSection fixed-top">
+    <header class="headerSection fixed-top" style="background: #231f20;">
 
 
         <!-- Navbar 1 - Bootstrap Brain Component -->
         <nav class="navbar navbar-expand-lg bsb-navbar bsb-navbar-hover bsb-navbar-caret">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    <img src="./asset/images/logo.png" style="width: clamp(8.3125rem, 8.008928571428571rem + 1.5178571428571428vw, 9.375rem);" alt="">
+                    <img src="./asset/images/blackBGlogo.png" style="width: clamp(8.3125rem, 8.008928571428571rem + 1.5178571428571428vw, 9.375rem);" alt="">
                      <!-- <h4 class="m-0" style="font-weight: 600;">CELL<i style="color: var(--primaryColor); font-weight: 700;">N</i>STYLE</h4> -->
                 </a>
                 <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff"
                         class="bi bi-list" viewBox="0 0 16 16">
                         <path fill-rule="evenodd"
                             d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
                     </svg>
                 </button>
-                <div class="offcanvas offcanvas-end me-auto" tabindex="-1" id="offcanvasNavbar"
+                <div class="offcanvas offcanvas-end me-auto" style="background: #231f20;" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-center flex-grow-1 gap-xl-4">
@@ -229,88 +229,124 @@
 
         <!-- Hero Section Start -->
 
-        <section id="hero-section" class="heroSection" style="padding-top: 3rem;">
+        <section id="hero-section" class="heroSection" style="margin-top: 3.7rem;">
             <div id="carouselExampleIndicators" class="heroWrapper carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
+                <div class="carousel-inner"  style="color: white !important;">
+                    <div class="carousel-item active" style="padding-block: 4rem; background: url(./asset/images/testHero1.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;">
 
-                        <div class="row flex-column-reverse flex-lg-row d-flex align-items-center">
-                            <div class="col-12 col-md-12 col-lg-6">
+                        <div class="row justify-content-center container mx-auto">
+                            <div class="col-12 col-md-8 col-xl-6">
                                 <div class="sliderContent">
-                                    <div class="carousel-content-box">
-                                        <h1 class="carousel-title">
+                                    <div class="carousel-content-box d-flex flex-column justify-content-center"  style="min-height: 400px;">
+                                        <h1 class="carousel-title pb-3">
                                             Fast & Reliable <span class="carousel-title-design">Phone Repairs</span></h1>
-                                        <p>Get your phone back in perfect working condition with our expert repair services. We handle all major brands with care.</p>
+                                        <p class="section-subtext">Get your phone back in perfect working condition with our expert repair services. We handle all major brands with care.</p>
                                         <a href="#"><button class="carousel-inner-btn">Call Store →</button></a>
+                                        <div class="carousel-btn-box">
+                                            <button class="slider-control-btn bg-transparent border-white text-white" type="button" data-bs-target="#carouselExampleIndicators"
+                                                data-bs-slide="prev">
+                                                <i class="fa-solid fa-chevron-left carousel-control-icon "></i>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="slider-control-btn bg-transparent border-white text-white" type="button" data-bs-target="#carouselExampleIndicators"
+                                                data-bs-slide="next">
+                                                <i class="fa-solid fa-chevron-right carousel-control-icon "></i>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-12 col-md-12 col-lg-6">.
-                                <img src="asset/images/hero/heroImage1_bgRemoved.png" class="d-block w-100 slider-image" alt="...">
-                            </div>
                         </div>
 
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item" style="padding-block: 4rem; background: url(./asset/images/testHero2.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;">
 
-                        <div class="row flex-column-reverse flex-lg-row d-flex align-items-center">
-                            <div class="col-12 col-md-12 col-lg-6">
+                        <div class="row justify-content-center container mx-auto">
+                            <div class="col-12 col-md-8 col-xl-6">
                                 <div class="sliderContent">
-                                    <div class="carousel-content-box">
-                                        <h1 class="carousel-title">Your One-Stop Solution for <span class="carousel-title-design">all Device Repairs
+                                    <div class="carousel-content-box d-flex flex-column justify-content-center"  style="min-height: 400px;">
+                                        <h1 class="carousel-title pb-3">Your One-Stop Solution for <span class="carousel-title-design">all Device Repairs
                                             </span></h1>
-                                        <p>No matter the device - smartphone, tablet, laptop, or console. We offer efficient
+                                        <p class="section-subtext">No matter the device - smartphone, tablet, laptop, or console. We offer efficient
                                             repair services that get your gadgets working again quickly.</p>
                                         <a href="#serviceSection"><button class="carousel-inner-btn">Book Repair →</button></a>
+                                        <div class="carousel-btn-box">
+                                            <button class="slider-control-btn bg-transparent border-white text-white" type="button" data-bs-target="#carouselExampleIndicators"
+                                                data-bs-slide="prev">
+                                                <i class="fa-solid fa-chevron-left carousel-control-icon "></i>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="slider-control-btn bg-transparent border-white text-white" type="button" data-bs-target="#carouselExampleIndicators"
+                                                data-bs-slide="next">
+                                                <i class="fa-solid fa-chevron-right carousel-control-icon "></i>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-12 col-md-12 col-lg-6">.
-                                <img src="asset/images/hero/heroImage2_bgRemoved.png" class="d-block w-100 slider-image" alt="...">
-                            </div>
                         </div>
 
                     </div>
 
-                    <div class="carousel-item">
+                    <div class="carousel-item" style="padding-block: 4rem; background: url(./asset/images/testHero1.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;">
 
-                        <div class="row flex-column-reverse flex-lg-row d-flex align-items-center">
-                            <div class="col-12 col-md-12 col-lg-6">
+                        <div class="row justify-content-center container mx-auto">
+                            <div class="col-12 col-md-8 col-xl-6">
                                 <div class="sliderContent">
-                                    <div class="carousel-content-box">
-                                        <h1 class="carousel-title"><span class="carousel-title-design">Affordable
+                                    <div class="carousel-content-box d-flex flex-column justify-content-center"  style="min-height: 400px;">
+                                        <h1 class="carousel-title pb-3"><span class="carousel-title-design">Affordable
                                                 Accessories</span> for Every Device</h1>
-                                        <p>Browse our wide selection of accessories designed to enhance your phone, tablet, or computer experience.</p>
+                                        <p class="section-subtext">Browse our wide selection of accessories designed to enhance your phone, tablet, or computer experience.</p>
                                         <a href="#"><button class="carousel-inner-btn">Shop Accessories →</button></a>
+                                        <div class="carousel-btn-box">
+                                            <button class="slider-control-btn bg-transparent border-white text-white" type="button" data-bs-target="#carouselExampleIndicators"
+                                                data-bs-slide="prev">
+                                                <i class="fa-solid fa-chevron-left carousel-control-icon "></i>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="slider-control-btn bg-transparent border-white text-white" type="button" data-bs-target="#carouselExampleIndicators"
+                                                data-bs-slide="next">
+                                                <i class="fa-solid fa-chevron-right carousel-control-icon "></i>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-12 col-md-12 col-lg-6">.
-                                <img src="asset/images/hero/heroImage3_bgRemoved.png" class="d-block w-100 slider-image" alt="...">
-                            </div>
                         </div>
 
                     </div>
 
-                    <div class="carousel-item">
+                    <div class="carousel-item" style="padding-block: 4rem; background: url(./asset/images/testHero2.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;">
 
-                        <div class="row flex-column-reverse flex-lg-row d-flex align-items-center">
-                            <div class="col-12 col-md-12 col-lg-6">
+                        <div class="row justify-content-center container mx-auto">
+                            <div class="col-12 col-md-8 col-xl-6">
                                 <div class="sliderContent">
-                                    <div class="carousel-content-box">
-                                        <h1 class="carousel-title"><span class="carousel-title-design">Sell </span>Your Old Devices</h1>
-                                        <p>Got old gadgets? Trade them in for cash! We offer competitive prices for phones, tablets, PCs, and more.</p>
+                                    <div class="carousel-content-box d-flex flex-column justify-content-center"  style="min-height: 400px;">
+                                        <h1 class="carousel-title pb-3"><span class="carousel-title-design">Sell </span>Your Old Devices</h1>
+                                        <p class="section-subtext">Got old gadgets? Trade them in for cash! We offer competitive prices for phones, tablets, PCs, and more. so, sell now!</p>
                                         <a href="#"><button class="carousel-inner-btn">Sell Device →</button></a>
+                                        <div class="carousel-btn-box">
+                                            <button class="slider-control-btn bg-transparent border-white text-white" type="button" data-bs-target="#carouselExampleIndicators"
+                                                data-bs-slide="prev">
+                                                <i class="fa-solid fa-chevron-left carousel-control-icon "></i>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="slider-control-btn bg-transparent border-white text-white" type="button" data-bs-target="#carouselExampleIndicators"
+                                                data-bs-slide="next">
+                                                <i class="fa-solid fa-chevron-right carousel-control-icon "></i>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-12 col-md-12 col-lg-6">.
-                                <img src="asset/images/hero/heroImage4_bgRemoved.png" class="d-block w-100 slider-image" alt="...">
-                            </div>
                         </div>
 
                     </div>
@@ -319,18 +355,7 @@
 
                 </div>
 
-                <div class="carousel-btn-box">
-                    <button class="slider-control-btn" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="prev">
-                        <i class="fa-solid fa-chevron-left carousel-control-icon "></i>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="slider-control-btn" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="next">
-                        <i class="fa-solid fa-chevron-right carousel-control-icon "></i>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
+
 
             </div>
         </section>
@@ -521,182 +546,184 @@
 
         <!-- Accessories section start-->
 
-        <section class="container my-5">
+        <section class="accessoriesSection py-5" style="background: #231f20; color: white !important;">
 
-            <div class="d-flex flex-column align-items-center flex-md-row justify-content-between gap-2">
-                <h1 class="section-title text-md-start">Get your <br class="d-none d-md-inline"> Favourite Accessories</h1>
-                <a href="./products.html" style="color: var(--primaryColor) !important;" class="commonBtn text-dark m-0">View More Products <i class="fa-solid fa-chevron-right c-arrow"></i></a>
-            </div>
-
-            <div class="px-lg-5 py-4 my-4 rounded-3 accessoriesSliderWrapper">
-
-                <div class="d-flex justify-content-between align-items-center gap-3 pb-4 toggleAccesoryType">
-                    <label class="text-center eachAccessoryType pb-1">
-                        Case And Protection
-                        <input type="radio" name="accessoryType" value="caseAndProtection" id="caseAndProtection" checked>
-                    </label>
-                    <label class="text-center eachAccessoryType pb-1">
-                        Battery
-                        <input type="radio" name="accessoryType" value="battery" id="battery">
-                    </label>
-                    <label class="text-center eachAccessoryType pb-1">
-                        Headset And Speaker
-                        <input type="radio" name="accessoryType" value="headsetAndSpeaker" id="headsetAndSpeaker">
-                    </label>
-                    <label class="text-center eachAccessoryType pb-1">
-                        Power and Cable
-                        <input type="radio" name="accessoryType" value="powerAndCable" id="powerAndCable">
-                    </label>
+            <div class="container">
+                <div class="d-flex flex-column align-items-center flex-md-row justify-content-between gap-2">
+                    <h1 class="section-title text-md-start">Get your <br class="d-none d-md-inline"> Favourite Accessories</h1>
+                    <a href="./products.html" style="color: var(--primaryColor) !important;" class="commonBtn text-dark m-0">View More Products <i class="fa-solid fa-chevron-right c-arrow"></i></a>
+                </div>
+    
+                <div class="px-lg-5 py-4 my-4 rounded-3 accessoriesSliderWrapper">
+    
+                    <div class="d-flex justify-content-between align-items-center gap-3 pb-4 toggleAccesoryType">
+                        <label class="text-center eachAccessoryType pb-1">
+                            Case And Protection
+                            <input type="radio" name="accessoryType" value="caseAndProtection" id="caseAndProtection" checked>
+                        </label>
+                        <label class="text-center eachAccessoryType pb-1">
+                            Battery
+                            <input type="radio" name="accessoryType" value="battery" id="battery">
+                        </label>
+                        <label class="text-center eachAccessoryType pb-1">
+                            Headset And Speaker
+                            <input type="radio" name="accessoryType" value="headsetAndSpeaker" id="headsetAndSpeaker">
+                        </label>
+                        <label class="text-center eachAccessoryType pb-1">
+                            Power and Cable
+                            <input type="radio" name="accessoryType" value="powerAndCable" id="powerAndCable">
+                        </label>
+                    </div>
+        
+        
+                    <div
+                    class="d-flex gap-4 justify-content-between slider"
+                    style="
+                    overflow-x: auto;
+                    overflow-y: visible;
+                      scrollbar-width: none;
+                      -ms-overflow-style: none;
+                      scroll-snap-type: x proximity;
+                    "
+                  >
+                    <a href="./products.html"
+                      class="card sliderCard rounded-3 firstCard "
+                      style="scroll-snap-align: start; background: var(--secondaryColor); color: inherit !important;"
+                    >
+                    <img src="./asset/images/accessories/phoneCase.webp" alt="Product Image" style="aspect-ratio: 3/2;" class="rounded-3">
+                      <div class="card-body d-flex gap-3 align-items-center">
+                        <div class="d-flex flex-column gap-3 align-items-center text-center">
+                            <p class="m-0">Xundd Protective Bumper Armor Case for iPhone 7 Plus/8 Plus</p>
+                            <div class="d-flex gap-2">
+                                <h5 class="card-title m-0">20$</h5>
+                                <h6 style="color: var(--primaryColor); text-decoration: line-through;">28$</h6>
+                            </div>
+                            
+                        </div>
+                      </div>
+                    </a>
+        
+                    <a href="./products.html"
+                      class="card sliderCard rounded-3 "
+                      style="scroll-snap-align: start; background: var(--secondaryColor); color: inherit !important;"
+                    >
+                    <img src="./asset/images/accessories/phoneCase.webp" alt="Product Image" style="aspect-ratio: 3/2;" class="rounded-3">
+                      <div class="card-body d-flex gap-3 align-items-center">
+                        <div class="d-flex flex-column gap-3 align-items-center text-center">
+                            <p class="m-0">iPhone 13 Pro Silicone Case | Abyss Blue</p>
+                            <div class="d-flex gap-2">
+                                <h5 class="card-title m-0">20$</h5>
+                                <h6 style="color: var(--primaryColor); text-decoration: line-through;">28$</h6>
+                            </div>
+                            
+                        </div>
+                      </div>
+                    </a>    
+                    
+                    <a href="./products.html"
+                      class="card sliderCard rounded-3 "
+                      style="scroll-snap-align: start; background: var(--secondaryColor); color: inherit !important;"
+                    >
+                    <img src="./asset/images/accessories/phoneCase.webp" alt="Product Image" style="aspect-ratio: 3/2;" class="rounded-3">
+                      <div class="card-body d-flex gap-3 align-items-center">
+                        <div class="d-flex flex-column gap-3 align-items-center text-center">
+                            <p class="m-0">iPhone 13 Pro Max Clear Case MagSafe Supported</p>
+                            <div class="d-flex gap-2">
+                                <h5 class="card-title m-0">20$</h5>
+                                <h6 style="color: var(--primaryColor); text-decoration: line-through;">28$</h6>
+                            </div>
+                            
+                        </div>
+                      </div>
+                    </a>  
+                    
+                    <a href="./products.html"
+                      class="card sliderCard rounded-3 "
+                      style="scroll-snap-align: start; background: var(--secondaryColor); color: inherit !important;"
+                    >
+                    <img src="./asset/images/accessories/phoneCase.webp" alt="Product Image" style="aspect-ratio: 3/2;" class="rounded-3">
+                      <div class="card-body d-flex gap-3 align-items-center">
+                        <div class="d-flex flex-column gap-3 align-items-center text-center">
+                            <p class="m-0">iPhone 7 Plus / 8 Plus Leather Case | Saddle Brown</p>
+                            <div class="d-flex gap-2">
+                                <h5 class="card-title m-0">20$</h5>
+                                <h6 style="color: var(--primaryColor); text-decoration: line-through;">28$</h6>
+                            </div>
+                            
+                        </div>
+                      </div>
+                    </a>  
+        
+                    <a href="./products.html"
+                      class="card sliderCard rounded-3 "
+                      style="scroll-snap-align: start; background: var(--secondaryColor); color: inherit !important;"
+                    >
+                    <img src="./asset/images/accessories/phoneCase.webp" alt="Product Image" style="aspect-ratio: 3/2;" class="rounded-3">
+                      <div class="card-body d-flex gap-3 align-items-center">
+                        <div class="d-flex flex-column gap-3 align-items-center text-center">
+                            <p class="m-0">iPhone 7 Plus / 8 Plus Full Covered Tempered Glass</p>
+                            <div class="d-flex gap-2">
+                                <h5 class="card-title m-0">20$</h5>
+                                <h6 style="color: var(--primaryColor); text-decoration: line-through;">28$</h6>
+                            </div>
+                            
+                        </div>
+                      </div>
+                    </a>  
+        
+                    <a href="./products.html"
+                      class="card sliderCard rounded-3 "
+                      style="scroll-snap-align: start; background: var(--secondaryColor); color: inherit !important;"
+                    >
+                    <img src="./asset/images/accessories/phoneCase.webp" alt="Product Image" style="aspect-ratio: 3/2;" class="rounded-3">
+                      <div class="card-body d-flex gap-3 align-items-center">
+                        <div class="d-flex flex-column gap-3 align-items-center text-center">
+                            <p class="m-0">We offer same-day repairs, so you won't have to be without your device for long.</p>
+                            <div class="d-flex gap-2">
+                                <h5 class="card-title m-0">20$</h5>
+                                <h6 style="color: var(--primaryColor); text-decoration: line-through;">28$</h6>
+                            </div>
+                            
+                        </div>
+                      </div>
+                    </a>  
+        
+                    <a href="./products.html"
+                      class="card sliderCard rounded-3 "
+                      style="scroll-snap-align: start; background: var(--secondaryColor); color: inherit !important;"
+                    >
+                    <img src="./asset/images/accessories/phoneCase.webp" alt="Product Image" style="aspect-ratio: 3/2;" class="rounded-3">
+                      <div class="card-body d-flex gap-3 align-items-center">
+                        <div class="d-flex flex-column gap-3 align-items-center text-center">
+                            <p class="m-0">We offer same-day repairs, so you won't have to be without your device for long.</p>
+                            <div class="d-flex gap-2">
+                                <h5 class="card-title m-0">20$</h5>
+                                <h6 style="color: var(--primaryColor); text-decoration: line-through;">28$</h6>
+                            </div>
+                            
+                        </div>
+                      </div>
+                    </a>  
+    
+                <div class="sliderCard d-flex align-items-center justify-content-start " style="scroll-snap-align: start;" >
+    
+                    <a href="./products.html" class="d-flex gap-2 align-items-center justify-content-center p-3 rounded-3" style="color: var(--primaryColor) !important;">
+                        <h4 class="m-0">MORE</h4>
+                        <i class="fa-duotone fa-solid fa-arrow-right fa-beat" style="font-size: 1rem;"></i>
+                    </a>
+    
+                </div>  
+        
+                  </div>
+    
                 </div>
     
     
-                <div
-                class="d-flex gap-4 justify-content-between slider"
-                style="
-                overflow-x: auto;
-                overflow-y: visible;
-                  scrollbar-width: none;
-                  -ms-overflow-style: none;
-                  scroll-snap-type: x proximity;
-                "
-              >
-                <a href="./products.html"
-                  class="card sliderCard rounded-3 firstCard "
-                  style="scroll-snap-align: start; background: var(--secondaryColor); color: inherit !important;"
-                >
-                <img src="./asset/images/accessories/phoneCase.webp" alt="Product Image" style="aspect-ratio: 3/2;" class="rounded-3">
-                  <div class="card-body d-flex gap-3 align-items-center">
-                    <div class="d-flex flex-column gap-3 align-items-center text-center">
-                        <p class="m-0">Xundd Protective Bumper Armor Case for iPhone 7 Plus/8 Plus</p>
-                        <div class="d-flex gap-2">
-                            <h5 class="card-title m-0">20$</h5>
-                            <h6 style="color: var(--primaryColor); text-decoration: line-through;">28$</h6>
-                        </div>
-                        
-                    </div>
-                  </div>
-                </a>
-    
-                <a href="./products.html"
-                  class="card sliderCard rounded-3 "
-                  style="scroll-snap-align: start; background: var(--secondaryColor); color: inherit !important;"
-                >
-                <img src="./asset/images/accessories/phoneCase.webp" alt="Product Image" style="aspect-ratio: 3/2;" class="rounded-3">
-                  <div class="card-body d-flex gap-3 align-items-center">
-                    <div class="d-flex flex-column gap-3 align-items-center text-center">
-                        <p class="m-0">iPhone 13 Pro Silicone Case | Abyss Blue</p>
-                        <div class="d-flex gap-2">
-                            <h5 class="card-title m-0">20$</h5>
-                            <h6 style="color: var(--primaryColor); text-decoration: line-through;">28$</h6>
-                        </div>
-                        
-                    </div>
-                  </div>
-                </a>    
-                
-                <a href="./products.html"
-                  class="card sliderCard rounded-3 "
-                  style="scroll-snap-align: start; background: var(--secondaryColor); color: inherit !important;"
-                >
-                <img src="./asset/images/accessories/phoneCase.webp" alt="Product Image" style="aspect-ratio: 3/2;" class="rounded-3">
-                  <div class="card-body d-flex gap-3 align-items-center">
-                    <div class="d-flex flex-column gap-3 align-items-center text-center">
-                        <p class="m-0">iPhone 13 Pro Max Clear Case MagSafe Supported</p>
-                        <div class="d-flex gap-2">
-                            <h5 class="card-title m-0">20$</h5>
-                            <h6 style="color: var(--primaryColor); text-decoration: line-through;">28$</h6>
-                        </div>
-                        
-                    </div>
-                  </div>
-                </a>  
-                
-                <a href="./products.html"
-                  class="card sliderCard rounded-3 "
-                  style="scroll-snap-align: start; background: var(--secondaryColor); color: inherit !important;"
-                >
-                <img src="./asset/images/accessories/phoneCase.webp" alt="Product Image" style="aspect-ratio: 3/2;" class="rounded-3">
-                  <div class="card-body d-flex gap-3 align-items-center">
-                    <div class="d-flex flex-column gap-3 align-items-center text-center">
-                        <p class="m-0">iPhone 7 Plus / 8 Plus Leather Case | Saddle Brown</p>
-                        <div class="d-flex gap-2">
-                            <h5 class="card-title m-0">20$</h5>
-                            <h6 style="color: var(--primaryColor); text-decoration: line-through;">28$</h6>
-                        </div>
-                        
-                    </div>
-                  </div>
-                </a>  
-    
-                <a href="./products.html"
-                  class="card sliderCard rounded-3 "
-                  style="scroll-snap-align: start; background: var(--secondaryColor); color: inherit !important;"
-                >
-                <img src="./asset/images/accessories/phoneCase.webp" alt="Product Image" style="aspect-ratio: 3/2;" class="rounded-3">
-                  <div class="card-body d-flex gap-3 align-items-center">
-                    <div class="d-flex flex-column gap-3 align-items-center text-center">
-                        <p class="m-0">iPhone 7 Plus / 8 Plus Full Covered Tempered Glass</p>
-                        <div class="d-flex gap-2">
-                            <h5 class="card-title m-0">20$</h5>
-                            <h6 style="color: var(--primaryColor); text-decoration: line-through;">28$</h6>
-                        </div>
-                        
-                    </div>
-                  </div>
-                </a>  
-    
-                <a href="./products.html"
-                  class="card sliderCard rounded-3 "
-                  style="scroll-snap-align: start; background: var(--secondaryColor); color: inherit !important;"
-                >
-                <img src="./asset/images/accessories/phoneCase.webp" alt="Product Image" style="aspect-ratio: 3/2;" class="rounded-3">
-                  <div class="card-body d-flex gap-3 align-items-center">
-                    <div class="d-flex flex-column gap-3 align-items-center text-center">
-                        <p class="m-0">We offer same-day repairs, so you won't have to be without your device for long.</p>
-                        <div class="d-flex gap-2">
-                            <h5 class="card-title m-0">20$</h5>
-                            <h6 style="color: var(--primaryColor); text-decoration: line-through;">28$</h6>
-                        </div>
-                        
-                    </div>
-                  </div>
-                </a>  
-    
-                <a href="./products.html"
-                  class="card sliderCard rounded-3 "
-                  style="scroll-snap-align: start; background: var(--secondaryColor); color: inherit !important;"
-                >
-                <img src="./asset/images/accessories/phoneCase.webp" alt="Product Image" style="aspect-ratio: 3/2;" class="rounded-3">
-                  <div class="card-body d-flex gap-3 align-items-center">
-                    <div class="d-flex flex-column gap-3 align-items-center text-center">
-                        <p class="m-0">We offer same-day repairs, so you won't have to be without your device for long.</p>
-                        <div class="d-flex gap-2">
-                            <h5 class="card-title m-0">20$</h5>
-                            <h6 style="color: var(--primaryColor); text-decoration: line-through;">28$</h6>
-                        </div>
-                        
-                    </div>
-                  </div>
-                </a>  
-
-            <div class="sliderCard d-flex align-items-center justify-content-start " style="scroll-snap-align: start;" >
-
-                <a href="./products.html" class="d-flex gap-2 align-items-center justify-content-center p-3 rounded-3" style="color: var(--primaryColor) !important;">
-                    <h4 class="m-0">MORE</h4>
-                    <i class="fa-duotone fa-solid fa-arrow-right fa-beat" style="font-size: 1rem;"></i>
-                </a>
-
-            </div>  
-    
+              <div class="heroNextPreBtn justify-content-center mx-auto" style="width: fit-content;">
+                <i class="fa-solid fa-angle-left sliderPrevButton slider-control-btn border-white text-white bg-transparent" style="padding: 10px 25px;" type="button"></i>
+                <i class="fa-solid fa-angle-right sliderNextButton slider-control-btn border-white text-white bg-transparent" style="padding: 10px 25px;" type="button"></i>
               </div>
-
             </div>
-
-
-          <div class="heroNextPreBtn justify-content-center mx-auto" style="width: fit-content;">
-            <i class="fa-solid fa-angle-left sliderPrevButton slider-control-btn" style="padding: 10px 25px;" type="button"></i>
-            <i class="fa-solid fa-angle-right sliderNextButton slider-control-btn" style="padding: 10px 25px;" type="button"></i>
-          </div>
 
 
 
@@ -1207,12 +1234,12 @@
 
     <!-----Footer Start------------->
 
-    <footer class="footer" style="background: linear-gradient(360deg,rgba(235, 29, 37, 0.15) 0%,rgba(235, 29, 37, 0.1) 90%,rgba(255, 255, 255, 0) 98%);">
+    <footer class="footer text-white" style="background: rgb(35, 31, 32);">
         <div class="container py-5">
             <div class="row row-cols-1 row-cols-lg-2 gap-5 gap-lg-0">
 
                     <div class="position-relative overflow-hidden">
-                        <img src="./asset/images/usa.svg" alt="" class="w-100 h-100 position-absolute" style="z-index: 1; opacity: .15; transform: scale(1.3);">
+                        <img src="./asset/images/usa.svg" alt="" class="w-100 h-100 position-absolute" style="z-index: 2; opacity: .15; transform: scale(1.3);">
                         <div class="d-flex position-relative flex-column gap-3" style="z-index: 10;">
                             <!-- <h4 class="m-0" style="font-weight: 600;">CELL<i style="color: var(--primaryColor); font-weight: 700;">N</i>STYLE</h4> -->
                              <h4 style="font-weight: 600;">Our Stores</h4>
@@ -1311,12 +1338,50 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="asset/js/main.js" defer></script>
+    <!-- <script src="asset/js/main.js" defer></script> -->
     <script src="asset/js/index.js" defer></script>
     <script src="asset/js/repair.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        // slider
+
+let slider = document.querySelectorAll(`.slider`);
+let firstCardWidth = document.querySelectorAll(`.firstCard`);
+let sliderPrevButton = document.querySelectorAll(`.sliderPrevButton`);
+let sliderNextButton = document.querySelectorAll(`.sliderNextButton`);
+
+// console.log(slider[0].scrollWidth)
+// console.log(slider[0].clientWidth)
+
+sliderNextButton.forEach((eachSliderNextButton, index) => {
+  setInterval(() => {
+    if (slider[index].scrollWidth <= slider[index].clientWidth) {
+      sliderNextButton[index].style.display = `none`;
+    } else {
+      sliderNextButton[index].style.display = `inline-block`;
+    }
+  }, 1000);
+
+  eachSliderNextButton.addEventListener(`click`, (e) => {
+    slider[index].scrollLeft += firstCardWidth[index].offsetWidth;
+  });
+});
+sliderPrevButton.forEach((eachSliderPrevButton, index) => {
+  setInterval(() => {
+    if (slider[index].scrollWidth <= slider[index].clientWidth) {
+      sliderPrevButton[index].style.display = `none`;
+    } else {
+      sliderPrevButton[index].style.display = `inline-block`;
+    }
+  }, 1000);
+  eachSliderPrevButton.addEventListener(`click`, (e) => {
+    slider[index].scrollLeft += -firstCardWidth[index].offsetWidth;
+  });
+});
+    </script>
 </body>
 
 </html>

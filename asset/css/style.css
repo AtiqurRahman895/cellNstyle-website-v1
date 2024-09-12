@@ -1,7 +1,7 @@
 html {
-  --primaryColor: #0D6EFD;
-  --secondaryColor: rgba(13, 109, 253, 0.15);
-  --accentColor: rgba(13, 109, 253, 0.5);
+  --primaryColor: #eb1d25;
+  --secondaryColor: rgba(235, 29, 37, 0.15);
+  --accentColor: rgba(235, 29, 37, 0.5);
 }
 *{
   scroll-behavior: smooth;
@@ -318,15 +318,15 @@ input:focus,textarea:focus,select:focus{
   border: 1px solid var(--primaryColor);
   background-color: var(--primaryColor);
   font-weight: 400;
-  color: #ffffff;
+  color: #ffffff !important;
   border-radius: 50px;
   transition: .3s;
 }
 
 .carousel-inner-btn:hover {
   border: 1px solid var(--primaryColor);
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #ffffff !important;
+  color: #000000 !important;
 }
 
 
@@ -464,7 +464,7 @@ input:focus,textarea:focus,select:focus{
 @media (min-width: 992px) {
 
   .accessoriesSliderWrapper{
-    background: hsla(0, 0%, 50%, 0.1);
+    background: #eeeeee;
   }
 }
 
