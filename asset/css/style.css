@@ -2,6 +2,7 @@ html {
   --primaryColor: #eb1d25;
   --secondaryColor: rgba(235, 29, 37, 0.15);
   --accentColor: rgba(235, 29, 37, 0.5);
+  --fontColor: #231f20;
 }
 *{
   scroll-behavior: smooth;
@@ -17,6 +18,7 @@ body {
   font-weight: weight;
   font-style: normal;
   font-size: 14px !important;
+  color: var(--fontColor) !important;
 }
 
 ::-webkit-scrollbar {
@@ -41,7 +43,7 @@ body {
 
 a {
   text-decoration: none !important;
-  color: #212529 !important;
+  color: var(--fontColor) !important;
 }
 h1,h2,h3,h4,h5,h6{
   font-weight: 600;
@@ -58,11 +60,11 @@ input,textarea,select{
   color: inherit;
 }
 input:hover,textarea:hover,select:hover{
-  border: 1px solid black!important;
+  border: 1px solid var(--fontColor)!important;
 
 }
 input:focus,textarea:focus,select:focus{
-  border: 1.5px solid black!important;
+  border: 1.5px solid var(--fontColor)!important;
 
 }
 
@@ -189,25 +191,10 @@ input:focus,textarea:focus,select:focus{
 
 /* ===== Navbar Start ===== */
 
-/* .active{
-  border-bottom: 1px solid;
-} */
-/* .nav-item {
-  margin-right: 20px;
-} */
-
-.headerSectionAnimation{
-  background: #ffffff33 !important;
-  backdrop-filter: blur(20px);
-}
-.headerSection:has(.show) {
-  backdrop-filter: none;
-
-}
 
 .nav-item>a {
   font-weight: 500;
-  color: black !important;
+  color: white !important;
 }
 .nav-item>a:hover {
   color: var(--primaryColor) !important;
@@ -238,7 +225,7 @@ input:focus,textarea:focus,select:focus{
 }
 
 .book-repair-btn:hover {
-  background-color: #fdede4;
+  background-color: white;
 }
 
 .nav-repair-icon{
@@ -294,7 +281,7 @@ input:focus,textarea:focus,select:focus{
 }
 
 .slider-control-btn:hover {
-  background-color: var(--primaryColor);
+  background-color: var(--primaryColor) !important;
   color: #ffffff;
 }
 
@@ -418,9 +405,8 @@ input:focus,textarea:focus,select:focus{
   transition: .3s;
 }
 
-.categories-box:hover{
-  border: 1px solid var(--primaryColor);
-  /* box-shadow: 0 10px 20px 3px var(--secondaryColor) !important; */
+.categories-box{
+  border: 1px solid var(--primaryColor) !important;
 
   .c-arrow{
     margin-left: 10px;
@@ -464,7 +450,7 @@ input:focus,textarea:focus,select:focus{
 @media (min-width: 992px) {
 
   .accessoriesSliderWrapper{
-    background: #eeeeee;
+    background: #292425;
   }
 }
 
@@ -519,7 +505,7 @@ input:focus,textarea:focus,select:focus{
   box-shadow: none;
 }
 .eachFAQ button:not(.collapsed) i{
-  color: black;
+  color: var(--fontColor);
 }
 .eachFAQ button:not(.collapsed)::after {
   background-image: var(--bs-accordion-btn-icon);
@@ -553,6 +539,7 @@ input:focus,textarea:focus,select:focus{
 
 .footer a{
   width: fit-content;
+  color: white !important;
 }
 
 .footer a:hover{
@@ -620,7 +607,7 @@ input:focus,textarea:focus,select:focus{
 }
 
 .serviceReciveMethodWrapper{
-  border: 1px solid black;
+  border: 1px solid var(--fontColor);
   transition: 0.5s;
 
 }
@@ -854,6 +841,16 @@ input:focus,textarea:focus,select:focus{
 .navbar .megamenu {
   padding: 1rem;
 }
+
+  .carousel-content-box {
+    text-align: center;
+  }
+
+  .carousel-btn-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
 
 @media all and (min-width: 992px) {
   .navbar .has-megamenu {
