@@ -15,7 +15,7 @@ body {
   scroll-behavior: smooth;
   font-family: "Raleway", sans-serif !important;
   font-optical-sizing: auto;
-  font-weight: weight;
+  font-weight: 700;
   font-style: normal;
   font-size: 14px !important;
   color: var(--fontColor) !important;
@@ -39,6 +39,9 @@ body {
 /* General CSS Start */
 .logo {
   width: 60px;
+}
+p,a,b{
+  line-height: 25px !important;
 }
 
 a {
@@ -622,28 +625,47 @@ input:focus,textarea:focus,select:focus{
   display: none !important;
 }
 
-.deviceBrandModel, .DeviceProblem, .method, .customerInfo, .termsConditon{
-  position: relative;
+.DeviceProblem, .method, .customerInfo, .termsConditon{
+  display: flex;
   transition: 0.5s;
   transform-origin: top;
+  animation-name: bsb-zoomIn;
+  animation-duration: 1s;
+  animation-fill-mode: both;
 
 }
 .deviceBrandModel:has(select:invalid, input:invalid, textarea:invalid) ~ .DeviceProblem{
-  position: absolute;
-  transform: scaleY(0);
+  display: none;
+  animation-name: none;
+ 
 }
 .DeviceProblem:has(select:invalid, input:invalid, textarea:invalid) ~ .method, .showMethod{
-  position: absolute;
-  transform: scaleY(0);
+  display: none;
+  animation-name: none;
+ 
 }
 
 .method:has(select:invalid, input:invalid, textarea:invalid) ~ .customerInfo{
-  position: absolute;
-  transform: scaleY(0);
+  display: none;
+  animation-name: none;
+ 
 }
 .customerInfo:has(select:invalid, input:invalid, textarea:invalid) ~ .termsConditon{
-  position: absolute;
-  transform: scaleY(0);
+  display: none;
+  animation-name: none;
+ 
+}
+
+@keyframes bsb-zoomIn {
+  0% {
+      opacity: 0;
+      transform: scale3d(.3,.3,.3)
+
+  }
+
+  80% {
+      opacity: 1
+  }
 }
 .customerInfo:has(select:invalid, input:invalid, textarea:invalid) ~ .formButtons .summitButton{
   display: none !important;
@@ -732,6 +754,40 @@ input:focus,textarea:focus,select:focus{
 
 /* Products Page End */
 
+/* productsDetails Page Start */
+
+/* contents */
+
+.ProductDetailsHeroSection{
+  padding-block: 2rem;
+}
+
+@media (min-width: 768px) {
+
+  .ProductDetailsHeroSection{
+    padding-block: 7rem 3rem;
+  }
+}
+
+
+
+.productImagesCarouselBtn div.active img {
+  transform: scale(1.3);
+}
+
+.addToBtn:has(input:checked) i {
+  color: rgb(255, 193, 7);
+}
+.addToBtn:has(input:checked) b {
+  color: var(--primaryColor);
+}
+
+.productDetailsTogglerAnimation{
+  border-bottom: 3px solid var(--primaryColor);
+}
+
+/* productsDetails Page End */
+
 
 /* Blogs Page start */
 
@@ -755,7 +811,7 @@ input:focus,textarea:focus,select:focus{
 
 @media (min-width: 992px) {
 
-  .termsConditionSection{
+  .extremeContainer{
     width: 70% !important;
     margin: auto;
   }
