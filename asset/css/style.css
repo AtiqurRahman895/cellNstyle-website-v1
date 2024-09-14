@@ -761,6 +761,14 @@ input:focus,textarea:focus,select:focus{
 .ProductDetailsHeroSection{
   padding-block: 2rem;
 }
+.productShare a:hover{
+  transition: .5s;
+  background: var(--secondaryColor) !important;
+}
+.productShare a:hover i, .productShare div:hover i{
+  transition: .5s;
+  color: var(--primaryColor) !important;
+}
 
 @media (min-width: 768px) {
 

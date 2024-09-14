@@ -239,29 +239,35 @@
                                 <input type="range" name="maxPrice" id="" min="0" max="194" value="194" step="1" class="rangeInput w-100 px-0">
                                 
                             </label>
+
+                            <label class="eachContent w-100 d-flex gap-2 align-items-center justify-content-sm-between py-3">
+                                <p class="m-0 " style="font-weight: 500;">All</p>
+                                <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
+                                <input type="radio" name="productsCategory" value="all" id="all" checked class="d-none eachProductsCategory">
+                            </label>
     
                             <label class="eachContent w-100 d-flex gap-2 align-items-center justify-content-sm-between py-3">
                                 <p class="m-0 " style="font-weight: 500;">Case And Protection</p>
                                 <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
-                                <input type="radio" name="accessoryType" value="caseAndProtection" id="caseAndProtection" checked class="d-none eachProductsCategory">
+                                <input type="radio" name="productsCategory" value="caseAndProtection" id="caseAndProtection" class="d-none eachProductsCategory">
                             </label>
                         
                             <label class="eachContent w-100 d-flex gap-2 align-items-center justify-content-sm-between py-3">
                                 <p class="m-0 " style="font-weight: 500;">Battery</p>
                                 <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
-                                <input type="radio" name="accessoryType" value="battery" id="battery" class="d-none eachProductsCategory">
+                                <input type="radio" name="productsCategory" value="battery" id="battery" class="d-none eachProductsCategory">
                             </label>
                         
                             <label class="eachContent w-100 d-flex gap-2 align-items-center justify-content-sm-between py-3">
                                 <p class="m-0 " style="font-weight: 500;">Headset And Speaker</p>
                                 <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
-                                <input type="radio" name="accessoryType" value="headsetAndSpeaker" id="headsetAndSpeaker" class="d-none eachProductsCategory">
+                                <input type="radio" name="productsCategory" value="headsetAndSpeaker" id="headsetAndSpeaker" class="d-none eachProductsCategory">
                             </label>
 
                             <label class="eachContent w-100 d-flex gap-2 align-items-center justify-content-sm-between py-3">
                                 <p class="m-0 " style="font-weight: 500;">Power and Cable</p>
                                 <i class="fa-solid fa-angle-right" style="font-size: 0.7rem;"></i>
-                                <input type="radio" type="radio" name="accessoryType" value="powerAndCable" id="powerAndCable" class="d-none eachProductsCategory">
+                                <input type="radio" type="radio" name="productsCategory" value="powerAndCable" id="powerAndCable" class="d-none eachProductsCategory">
                             </label>
                         
              
@@ -271,8 +277,10 @@
     
                 <div class="h-100 no-scrollbar pt-4" style="overflow-y: scroll; scrollbar-width: none; -ms-overflow-style: none;">
                     <div class="d-flex flex-column gap-4 container-fluid">
+
+                        <h1 class="section-title text-center">All Products</h1>
     
-                        <h1 class="section-title text-center">Results for Case And Protection</h1>
+                        <!-- <h1 class="section-title text-center">Results for Case And Protection</h1> -->
     
                         <div class="allProducts">
     
@@ -403,6 +411,10 @@
                             </a>
     
 
+                        </div>
+
+                        <div class="text-center">
+                            <a href="" class="commonBtn text-dark">Load more <i class="fa-solid fa-chevron-right c-arrow"></i></a>
                         </div>
     
     
@@ -569,6 +581,7 @@
     <script src="asset/js/main.js" defer></script>
     <script src="asset/js/index.js" defer></script>
     <script src="asset/js/repair.js" defer></script>
+    <script src="asset/js/products.js" defer></script>
     <script src="asset/js/productDetails.js" defer></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
