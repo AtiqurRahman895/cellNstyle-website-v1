@@ -4,7 +4,9 @@
 
 
 let productQuantity=1
-let initialTotalPrice= document.querySelector(`.totalPrice`).innerText
+let totalPrice=  document.querySelector(`.totalPrice`)
+totalPrice.innerText=document.querySelector(`.singleProductPrice`).innerText
+let initialTotalPrice=totalPrice.innerText
 
 if(productQuantity==1){
         document.querySelector(`.QuantityDecrementBtn`).disabled=true
