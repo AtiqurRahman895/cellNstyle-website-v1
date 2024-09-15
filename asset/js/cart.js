@@ -1,8 +1,8 @@
 // Function to update total product prices and total amount
 
-function changeTotalProductPrices() {
-    let totalProductPrices = 0;
-    let totalAmount = 0;
+function changeTotalBill() {
+    let subtotal = 0;
+    let totalBill = 0;
 
     // Re-select all the price elements each time the function is called
     let allTotalPrices = document.querySelectorAll(`.totalPrice`);
@@ -10,16 +10,16 @@ function changeTotalProductPrices() {
     
     // Recalculate the total product prices
     allTotalPrices.forEach((eachTotalPrice) => {
-        totalProductPrices += Number(eachTotalPrice.innerText);
+        subtotal += Number(eachTotalPrice.innerText);
     });
 
     // Update the total product prices and total amount
-    document.querySelector(`.totalProductPrices`).innerText = `${totalProductPrices}$`;
-    totalAmount = totalProductPrices + Number(deliveryCharge.innerText);
-    document.querySelector(`.totalAmount`).innerText = `${totalAmount}$`;
+    document.querySelector(`.subtotal`).innerText = `${subtotal}$`;
+    totalBill = subtotal + Number(deliveryCharge.innerText);
+    document.querySelector(`.totalBill`).innerText = `${totalBill}$`;
 }
 
-// Function to attach event listeners to cart items
+// Function to attach event listeners to cartItems for deleting them
 
 function attachDeleteListeners() {
     let cartItems = document.querySelectorAll(`.cartItem`);
@@ -31,7 +31,7 @@ function attachDeleteListeners() {
             cartItems[index].remove();
             
             // Recalculate total product prices
-            changeTotalProductPrices();
+            changeTotalBill();
             
             // Re-attach event listeners after an item is deleted
             attachDeleteListeners();  // Recursively update the listeners
@@ -40,15 +40,16 @@ function attachDeleteListeners() {
 }
 
 // Initial calculation of total prices
-changeTotalProductPrices();
+changeTotalBill();
 
 // Attach event listeners for the first time
 attachDeleteListeners();
 
+// Change cartItems quantity
 let QuantityChangingBtn= document.querySelectorAll(`.QuantityChangingBtn`)
 QuantityChangingBtn.forEach((eachQuantityChangingBtn)=>{
     eachQuantityChangingBtn.addEventListener(`click`,(e)=>{
         // Recalculate total product prices
-        changeTotalProductPrices();
+        changeTotalBill();
     })
 })
