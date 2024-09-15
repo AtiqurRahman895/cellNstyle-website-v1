@@ -317,9 +317,9 @@
                                 <b>Price:</b>
         
                                 <div class="d-flex gap-2 align-items-center">
-                                    <div class="d-flex">
-                                        <h6 class="singleProductPrice" style="color: var(--primaryColor); margin-bottom: 0px;">220</h6>
-                                        <h6 style="color: var(--primaryColor); margin-bottom: 0px;">$</h6>
+                                    <div class="d-flex" style="color: var(--primaryColor);">
+                                        <h6 class="singleProductPrice mb-0">220</h6>
+                                        <h6 class="mb-0">$</h6>
                                     </div>
                                     <span class="text-decoration-line-through ">350$</span>
                                     <button disabled="disabled" class="rounded-3 border-0" style="background: var(--primaryColor);">
@@ -334,13 +334,13 @@
         
                                 <div class="d-flex gap-4 align-items-center">
         
-                                    <button onclick="changeProductQuantity(-1)" class="rounded-3 border-0 QuantityDecrementBtn" style="background: #d3d3d3;">
+                                    <button class="rounded-1 border-0 QuantityDecrementBtn" style="background: #eeeeee; aspect-ratio: 1;">
                                         <i class="fa-solid fa-minus p-1" style="font-size: 1rem;"></i>
                                     </button>
         
-                                    <h6 class="productQuantity" style="color: var(--primaryColor); margin-bottom: 0px;"></h6>
+                                    <h6 class="productQuantity mb-0" style="color: var(--primaryColor);"></h6>
         
-                                    <button onclick="changeProductQuantity(+1)" class="rounded-3 border-0 QuantityIncrementBtn" style="background: #d3d3d3;">
+                                    <button class="rounded-1 border-0 QuantityIncrementBtn" style="background: #eeeeee; aspect-ratio: 1;">
                                         <i class="fa-solid fa-plus p-1" style="font-size: 1rem;"></i>
                                     </button>
         
@@ -350,25 +350,24 @@
         
                             <div class="d-flex gap-5 align-items-center ">
                                 <b>Total Price:</b>
-                                <div class="d-flex">
-                                    <h6 class="totalPrice" style="color: var(--primaryColor); margin-bottom: 0px;"></h6>
-                                    <h6 style="color: var(--primaryColor); margin-bottom: 0px;">$</h6>
+                                <div class="d-flex" style="color: var(--primaryColor);">
+                                    <h6 class="totalPrice mb-0"></h6>
+                                    <h6 class="mb-0">$</h6>
                                 </div>
                                 
                             </div>
     
-                            <a href="" class="d-flex gap-3 align-items-center ">
-                                <button type="button" class="btn text-white d-flex gap-2 align-items-center" style="background: var(--primaryColor);">
-                                    <i class="fa-solid fa-cart-plus" style="font-size: 0.8rem;"></i>
+                            <div class="d-flex gap-3 align-items-center ">
+                                <a href="" type="button" class="btn text-white d-flex gap-2 align-items-center" style="background: var(--primaryColor);">
+                                    <i class="fa-solid fa-cart-plus" style="font-size: 1rem;"></i>
                                     <b class="text-nowrap" style="font-size: 0.75rem;">Add to cart</b>
-                                </button>
-    
-                                <button type="button" class="btn text-white gap-2 align-items-center" style="background: #17b95b;">
-                                    <i class="fa-solid fa-bag-shopping" style="font-size: 0.7rem;"></i>
-                                    <b class="text-nowrap" style="font-size: 0.75rem;">View cart Now</b>
-                                </button>
+                                </a>
+                                <a href="./cart.html" type="button" class="btn text-white gap-2 align-items-center" style="background: #17b95b;">
+                                    <i class="fa-solid  fa-cart-circle-check" style="font-size: 1rem;"></i>
+                                    <b class="text-nowrap" style="font-size: 0.75rem;">View your cart</b>
+                                </a>
                                 
-                            </a>
+                            </div>
     
                             <div class="d-flex gap-5 align-items-center">
     
@@ -376,19 +375,19 @@
     
                             <div class="d-flex flex-wrap flex-sm-nowrap gap-2 productShare">
     
-                                <a href="#" class="d-flex flex-column gap-2 align-items-center" style="background: rgb(35, 31, 32,0.3);">
+                                <a href="#" class="d-flex flex-column gap-2 align-items-center" style="background:#eeeeee;">
                                   <i class="fa-brands fa-whatsapp rounded-0 p-2" style="font-size: 1rem;" ></i>
                                 </a>
                     
-                                <a href="#" class="d-flex flex-column gap-2 align-items-center" style="background: rgb(35, 31, 32,0.3);">
+                                <a href="#" class="d-flex flex-column gap-2 align-items-center" style="background:#eeeeee;">
                                   <i class="fa-brands fa-facebook rounded-0 p-2" style="font-size: 1rem;" ></i>
                                 </a>
                     
-                                <a href="#" class="d-flex flex-column gap-2 align-items-center" style="background: rgb(35, 31, 32,0.3);">
+                                <a href="#" class="d-flex flex-column gap-2 align-items-center" style="background:#eeeeee;">
                                   <i class="fa-brands fa-instagram rounded-0 p-2" style="font-size: 1rem;" ></i>
                                 </a>
                     
-                                <a href="#" class="d-flex flex-column gap-2 align-items-center" style="background: rgb(35, 31, 32,0.3);">
+                                <a href="#" class="d-flex flex-column gap-2 align-items-center" style="background:#eeeeee;">
                                   <i class="fa-brands fa-at rounded-0 p-2" style="font-size: 1rem;" ></i>
                                 </a>
                     
@@ -428,7 +427,7 @@
     <section class="detailsSection container mb-5">
         <div class="detailsWrapper row g-4">
 
-            <div class="col-12 col-md-8 col-lg-9 order-md-last">
+            <div class="col-12 col-md-7 col-xl-9 order-md-last">
 
                 <div class="d-flex flex-column gap-4">
 
@@ -476,7 +475,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-md-4 col-lg-3">
+            <div class="col-12 col-md-5 col-xl-3">
 
                 <div class="d-flex flex-column gap-4">
 
@@ -508,7 +507,7 @@
 
                         <div class="d-flex flex-column gap-4 p-3">
                             <a href="" class="d-flex gap-3 align-items-center">
-                                <img src="./asset/images/accessories/phoneCase.webp" alt="" class="" style="width: 50px; aspect-ratio: 1;">
+                                <img src="./asset/images/accessories/phoneCase.webp" alt="" class="rounded-2" style="width: 80px; aspect-ratio: 1;">
                                 <div class="d-flex flex-column">
                                     <p>Xundd Protective Bumper Armor Case for iPhone 7 Plus/8 Plus</p>
                                     <div class="d-flex gap-3">
@@ -518,7 +517,7 @@
                             </a>
     
                             <a href="" class="d-flex gap-3 align-items-center">
-                                <img src="./asset/images/accessories/phoneCase.webp" alt="" class="" style="width: 50px; aspect-ratio: 1;">
+                                <img src="./asset/images/accessories/phoneCase.webp" alt="" class="rounded-2" style="width: 80px; aspect-ratio: 1;">
                                 <div class="d-flex flex-column">
                                     <p>iPhone 13 Pro Silicone Case | Abyss Blue</p>
                                     <div class="d-flex gap-2">
@@ -530,7 +529,7 @@
                             </a>
     
                             <a href="" class="d-flex gap-3 align-items-center">
-                                <img src="./asset/images/accessories/phoneCase.webp" alt="" class="" style="width: 50px; aspect-ratio: 1;">
+                                <img src="./asset/images/accessories/phoneCase.webp" alt="" class="rounded-2" style="width: 80px; aspect-ratio: 1;">
                                 <div class="d-flex flex-column">
                                     <p>iPhone 13 Pro Max Clear Case MagSafe Supported</p>
                                     <div class="d-flex gap-2">
@@ -542,7 +541,7 @@
                             </a>
     
                             <a href="" class="d-flex gap-3 align-items-center">
-                                <img src="./asset/images/accessories/phoneCase.webp" alt="" class="" style="width: 50px; aspect-ratio: 1;">
+                                <img src="./asset/images/accessories/phoneCase.webp" alt="" class="rounded-2" style="width: 80px; aspect-ratio: 1;">
                                 <div class="d-flex flex-column">
                                     <p>iPhone 7 Plus / 8 Plus Leather Case | Saddle Brown </p>
                                     <div class="d-flex gap-2">
@@ -554,7 +553,7 @@
                             </a>
     
                             <a href="" class="d-flex gap-3 align-items-center">
-                                <img src="./asset/images/accessories/phoneCase.webp" alt="" class="" style="width: 50px; aspect-ratio: 1;">
+                                <img src="./asset/images/accessories/phoneCase.webp" alt="" class="rounded-2" style="width: 80px; aspect-ratio: 1;">
                                 <div class="d-flex flex-column">
                                     <p>iPhone 7 Plus / 8 Plus Full Covered Tempered Glass</p>
                                     <div class="d-flex gap-2">
@@ -566,7 +565,7 @@
                             </a>
     
                             <a href="" class="d-flex gap-3 align-items-center">
-                                <img src="./asset/images/accessories/phoneCase.webp" alt="" class="" style="width: 50px; aspect-ratio: 1;">
+                                <img src="./asset/images/accessories/phoneCase.webp" alt="" class="rounded-2" style="width: 80px; aspect-ratio: 1;">
                                 <div class="d-flex flex-column">
                                     <p>iPhone 13 Pro Max Clear Case MagSafe Supported</p>
                                     <div class="d-flex gap-2">
