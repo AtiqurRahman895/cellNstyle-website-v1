@@ -3,34 +3,86 @@
 // hero
 
 
-let productQuantity=1
-let totalPrice=  document.querySelector(`.totalPrice`)
-totalPrice.innerText=document.querySelector(`.singleProductPrice`).innerText
-let initialTotalPrice=totalPrice.innerText
+let productQuantity= document.querySelectorAll(`.productQuantity`)
+let QuantityDecrementBtn= document.querySelectorAll(`.QuantityDecrementBtn`)
+let QuantityIncrementBtn= document.querySelectorAll(`.QuantityIncrementBtn`)
+let singleProductPrice= document.querySelectorAll(`.singleProductPrice`)
+let totalPrice= document.querySelectorAll(`.totalPrice`)
 
-if(productQuantity==1){
-        document.querySelector(`.QuantityDecrementBtn`).disabled=true
-}
+productQuantity.forEach((eachProductQuantity,index)=>{
+  
+  if(eachProductQuantity.innerText){
+    
+    if(Number(eachProductQuantity.innerText)==1){
+      QuantityDecrementBtn[index].disabled=true
+      totalPrice[index].innerText=Number(singleProductPrice[index].innerText) * Number(eachProductQuantity.innerText)
 
-document.querySelector(`.productQuantity`).innerText=productQuantity
-function changeProductQuantity(quantity){
-    productQuantity+=quantity
-
-    // if(productQuantity<=0){
-    //     productQuantity=1
-    // }
-
-    if(productQuantity==1){
-        document.querySelector(`.QuantityDecrementBtn`).disabled=true
     }else{
-        document.querySelector(`.QuantityDecrementBtn`).disabled=false
+      // console.log(Number(singleProductPrice[index].innerText) , Number(eachProductQuantity.innerText))
+      totalPrice[index].innerText=Number(singleProductPrice[index].innerText) * Number(eachProductQuantity.innerText)
     }
+  }else{
+    productQuantity[index].innerText=1
+    QuantityDecrementBtn[index].disabled=true
+    totalPrice[index].innerText=Number(singleProductPrice[index].innerText) * Number(eachProductQuantity.innerText)
 
-    document.querySelector(`.productQuantity`).innerText=productQuantity
-    changedTotalPrice=Number(initialTotalPrice) * productQuantity
-    document.querySelector(`.totalPrice`).innerText=changedTotalPrice
+  }
+})
 
-}
+
+// function changeProductQuantity(quantity,index){
+//   productQuantity[index].innerText=Number(productQuantity[index].innerText) + quantity
+
+//   console.log(`nnkkk`)
+
+//     if(Number(productQuantity[index].innerText)==1){
+//         QuantityDecrementBtn[index].disabled=true
+//     }else{
+//         QuantityDecrementBtn[index].disabled=false
+//     }
+
+//     let changedTotalPrice=Number(singleProductPrice[index].innerText) * Number(productQuantity[index].innerText)
+//     totalPrice[index].innerText=changedTotalPrice
+
+// }
+
+
+QuantityIncrementBtn.forEach((eachQuantityIncrementBtn,index)=>{
+  eachQuantityIncrementBtn.addEventListener(`click`,(e)=>{
+    let quantity= +1
+    productQuantity[index].innerText=Number(productQuantity[index].innerText) + quantity
+
+  
+      if(Number(productQuantity[index].innerText)==1){
+          QuantityDecrementBtn[index].disabled=true
+      }else{
+          QuantityDecrementBtn[index].disabled=false
+      }
+  
+      let changedTotalPrice=Number(singleProductPrice[index].innerText) * Number(productQuantity[index].innerText)
+      totalPrice[index].innerText=changedTotalPrice
+  
+  })
+})
+QuantityDecrementBtn.forEach((eachQuantityDecrementBtn,index)=>{
+  eachQuantityDecrementBtn.addEventListener(`click`,(e)=>{
+    let quantity= -1
+    productQuantity[index].innerText=Number(productQuantity[index].innerText) + quantity
+
+  
+      if(Number(productQuantity[index].innerText)==1){
+          QuantityDecrementBtn[index].disabled=true
+      }else{
+          QuantityDecrementBtn[index].disabled=false
+      }
+  
+      let changedTotalPrice=Number(singleProductPrice[index].innerText) * Number(productQuantity[index].innerText)
+      totalPrice[index].innerText=changedTotalPrice
+  
+  })
+})
+
+
 
 // Details and Description section
 
