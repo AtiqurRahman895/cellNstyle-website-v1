@@ -856,6 +856,25 @@ input:focus,textarea:focus,select:focus{
 
 /* Cart page end */
 
+/* Sell page start */
+
+.inputDeviceImageWrappper{
+  border: 1px solid rgb(151, 151, 151);
+  transition: 0.5s;
+}
+.inputDeviceImageWrappper:hover{
+  border: 1px solid black;
+}
+.inputDeviceImageWrappper i{
+  color: var(--primaryColor);
+  transition: 0.5s;
+}
+.inputDeviceImageWrappper:has(:valid) i{
+  color: #0fa0ff;
+
+}
+
+/* Sell page end */
 
 
 
