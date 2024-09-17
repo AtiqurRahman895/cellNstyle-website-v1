@@ -742,6 +742,58 @@ input:focus,textarea:focus,select:focus{
   color: var(--primaryColor) !important;
 }
 
+/* Search Filter */
+.search-btn {
+  border: none;
+}
+
+.src-bar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid var(--fontColor);
+  border-radius: 25px;
+}
+
+.search-bar {
+  border: none !important;
+  width: 100%;
+  border-radius: 25px;
+  padding: 10px;
+  padding-right: 20px;
+}
+
+.search-bar:hover{
+  border: none !important;
+
+}
+
+.search-bar:focus {
+  border: none !important;
+  border-radius: 25px;
+}
+
+.searchBarProductsWrapper {
+  height: 60svh;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: var(--primaryColor);
+}
+
+.searchBarProduct{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  
+}
+.searchBarProduct:hover{
+  background: var(--primaryColor);
+}
+.searchBarProduct:hover b{
+  color: white;
+}
+
+
 
 /* details */
 

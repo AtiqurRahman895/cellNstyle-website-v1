@@ -202,7 +202,7 @@
                                 <a class="nav-link text-nowrap" href="./sell.html">Sell</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-nowrap" href="#!">Our Team</a>
+                                <a class="nav-link text-nowrap" href="#!">Career</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-nowrap" href="#!">Contact</a>
@@ -232,6 +232,14 @@
                 <div class="productsSidebar flex-sm-shrink-0 h-100" style="overflow-y: scroll; scrollbar-width: thin; background: rgba(238, 238, 238, 1); width: 100% !important;">
     
                     <div class="productsCategories d-flex flex-column justify-content-start align-items-center px-3" >
+
+                        <div class="eachContent w-100 d-flex gap-2 align-items-center justify-content-sm-between py-3">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="search-btn rounded-0" style="background: #ededed;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <i class="fa-solid fa-magnifying-glass"></i> 
+                                Search Product
+                            </button>
+                        </div>
 
                             <label class="eachContent w-100 d-flex flex-column overflow-hidden pt-3">
                                 <p class="m-0 " style="font-weight: 500; color: var(--primaryColor)">Price: <b class="rangeOutput text-black-50" id="rangeOutput0"></b> $</p>
@@ -439,6 +447,80 @@
 
 
 
+    <!-- Search Bar Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Search here</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="example" action="">
+                        <div class="src-bar">
+                            <input class="search-bar" type="text" placeholder="Search.." name="search" onkeyup="filterFunction()">
+                            <i class="fa fa-search p-3"></i>
+                        </div>
+                    </form>
+                    <div class="searchBarProductsWrapper container-fluid d-flex flex-column pt-3 gap-3">
+
+                        <b class="searchResults" style="color: var(--custom-orange-color);"></b>
+
+                        <a href="ProductDetails.html" class="searchBarProduct p-2 border rounded-2">
+                            <img src="./asset/images/accessories/phoneCase.webp" style="width: 70px; aspect-ratio: 1;" alt="" class="searchBarProductImage rounded-2 ">
+                            <b class="searchBarProductTitle" title="Panel Light">06 Watt Panel Squire White Color Light</b>
+
+                        </a>
+
+                        <a href="ProductDetails.html" class="searchBarProduct p-2 border rounded-2">
+                            <img src="./asset/images/accessories/phoneCase.webp" style="width: 70px; aspect-ratio: 1;" alt="" class="searchBarProductImage rounded-2">
+                            <b class="searchBarProductTitle" title="Flood Light">5W Flood Round White Color Light</b>
+
+                        </a>
+
+                        <a href="ProductDetails.html" class="searchBarProduct p-2 border rounded-2">
+                            <img src="./asset/images/accessories/phoneCase.webp" style="width: 70px; aspect-ratio: 1;" alt="" class="searchBarProductImage rounded-2 ">
+                            <b class="searchBarProductTitle" title="Panel Light">06 Watt Panel Squire White Color Light</b>
+
+                        </a>
+
+                        <a href="ProductDetails.html" class="searchBarProduct p-2 border rounded-2">
+                            <img src="./asset/images/accessories/phoneCase.webp" style="width: 70px; aspect-ratio: 1;" alt="" class="searchBarProductImage rounded-2">
+                            <b class="searchBarProductTitle" title="Flood Light">5W Flood Round White Color Light</b>
+
+                        </a>
+
+                        <a href="ProductDetails.html" class="searchBarProduct p-2 border rounded-2">
+                            <img src="./asset/images/accessories/phoneCase.webp" style="width: 70px; aspect-ratio: 1;" alt="" class="searchBarProductImage rounded-2 ">
+                            <b class="searchBarProductTitle" title="Panel Light">06 Watt Panel Squire White Color Light</b>
+
+                        </a>
+
+                        <a href="ProductDetails.html" class="searchBarProduct p-2 border rounded-2">
+                            <img src="./asset/images/accessories/phoneCase.webp" style="width: 70px; aspect-ratio: 1;" alt="" class="searchBarProductImage rounded-2">
+                            <b class="searchBarProductTitle" title="Flood Light">5W Flood Round White Color Light</b>
+
+                        </a>
+
+                        <a href="ProductDetails.html" class="searchBarProduct p-2 border rounded-2">
+                            <img src="./asset/images/accessories/phoneCase.webp" style="width: 70px; aspect-ratio: 1;" alt="" class="searchBarProductImage rounded-2 ">
+                            <b class="searchBarProductTitle" title="Panel Light">06 Watt Panel Squire White Color Light</b>
+
+                        </a>
+
+                        <a href="ProductDetails.html" class="searchBarProduct p-2 border rounded-2">
+                            <img src="./asset/images/accessories/phoneCase.webp" style="width: 70px; aspect-ratio: 1;" alt="" class="searchBarProductImage rounded-2">
+                            <b class="searchBarProductTitle" title="Flood Light">5W Flood Round White Color Light</b>
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
 
 
 
@@ -582,6 +664,7 @@
     <script src="asset/js/index.js" defer></script>
     <script src="asset/js/repair.js" defer></script>
     <script src="asset/js/products.js" defer></script>
+    <script src="asset/js/searchFilter.js" defer></script>
     <script src="asset/js/productDetails.js" defer></script>
     <script src="asset/js/cart.js" defer></script>
 
