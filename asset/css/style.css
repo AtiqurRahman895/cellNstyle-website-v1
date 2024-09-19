@@ -49,7 +49,7 @@ a {
   color: var(--fontColor) !important;
 }
 h1,h2,h3,h4,h5,h6{
-  font-weight: 600;
+  font-weight: 600 !important;
   /* margin: 0px !important; */
 }
 
@@ -172,7 +172,7 @@ input:focus,textarea:focus,select:focus{
 
 .section-title{
   font-size: 2rem;
-  font-weight: 700;
+  /* font-weight: 700; */
   text-align: center;
 }
 .section-subtext{
@@ -379,11 +379,11 @@ input:focus,textarea:focus,select:focus{
 }
 
 .icon-3 {
-  color: rgb(235, 35, 68);
+  color: rgb(225, 48, 108);
 }
 
 .icon-4 {
-  color: rgb(255, 28, 46);
+  color: rgb(255, 0, 0);
 }
 
 /* Hero Section End */
@@ -927,6 +927,21 @@ input:focus,textarea:focus,select:focus{
 }
 
 /* Sell page end */
+
+/* contact page start */
+
+.map{
+  aspect-ratio: 3/2;
+}
+
+@media (min-width: 576px) {
+
+  .map{
+    aspect-ratio: none;
+    height: 400px;
+  }
+}
+
 
 
 
