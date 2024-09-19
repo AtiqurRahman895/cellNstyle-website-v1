@@ -205,7 +205,7 @@
                                 <a class="nav-link text-nowrap" href="#!">Career</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-nowrap" href="#!">Contact</a>
+                                <a class="nav-link text-nowrap" href="./contact.html">Contact</a>
                             </li>
 
                         </ul>
@@ -727,8 +727,24 @@
                 </div>
 
                 <div class="serviceSummary d-flex flex-column gap-4 pt-5 pt-md-0">
-                    <div class="">
-                        <h5>Summary</h5>
+
+                    <div class="d-flex flex-column gap-3 p-3 rounded-2" style="background: var(--primaryColor); color: white;">
+                        <!-- <p class="p-3 mb-0 rounded-2" style="background: var(--primaryColor); color: white;">
+                            Repair costs depend on the device type and the nature of the issue. After diagnosing the problem, we will inform you of the final cost either by phone or discuss in-store.
+                        </p> -->
+
+                        <i class="fa-duotone fa-solid fa-quote-left" style="font-size: 1.5rem;"></i>
+                        <p class="m-0">There's no need to book an appointment—feel free to visit our store whenever it suits you!</p>
+                        <i class="fa-duotone fa-solid fa-quote-right text-end" style="font-size: 1.5rem;"></i>
+
+                        <!-- <p class="p-3 mb-0 rounded-2" style="background: var(--primaryColor); color: white;">
+                            There's no need to book an appointment—feel free to visit our store whenever it suits you!
+                        </p> -->
+                        
+                    </div>
+
+                    <div>
+                        <h5>Phone</h5>
                         <div class="d-flex flex-wrap gap-3 align-items-center">
                             <img src="./asset/images/categories-images/mobile.webp" alt="Device Image" style="width: 70px; aspect-ratio: 3/2;" class="">
                             <div class="">
@@ -741,21 +757,12 @@
                         </div>
                     </div>
 
-                    <div class="d-flex flex-column gap-3 pt-4"  style="border-top: 2px solid var(--accentColor);">
-                        <h5>Pricing details</h5>
-                        <div class="d-flex gap-3"><h6 style="color: var(--primaryColor);">Due:</h6><b>0$</b></div>
-                        <p class="p-3 rounded-2" style="background: var(--secondaryColor);">
-                            we will inform you of the final cost either by phone or discuss in-store.
-                        </p>
-                        
-                    </div>
-
                     <div class="d-flex flex-column gap-3 py-4"  style="border-block: 2px solid var(--accentColor);">
-                        <h5>Visit details</h5>
+                        <h5>Visit Store</h5>
                         <div class="d-flex gap-3 align-items-center">
                             <i class="fa-duotone fa-solid fa-map-location-dot" style="font-size: 1rem;"></i>
                             <div class="">
-                                <h6 style="color: var(--primaryColor);">Location you choosed</h6>
+                                <h6 style="color: var(--primaryColor);">Your chosen location</h6>
                                 <p class="m-0">2201 S Interstate 35, Denton, TX 76205</p>
                             </div>
                         </div>
@@ -778,21 +785,88 @@
                             </div>
                         </div>
                         <div class="d-flex gap-3 align-items-center">
-                            <i class="fa-duotone fa-solid fa-credit-card" style="font-size: 1rem;"></i>
-                            <div class="">
-                                <h6 style="color: var(--primaryColor);">Payment method</h6>
-                            </div>
+                            <i class="fa-duotone fa-solid fa-hexagon-exclamation" style="font-size: 1.3rem;"></i>
+                            <b class="" style="color: var(--primaryColor);">
+                                Repair costs depend on the device type and the nature of the issue. After diagnosing the problem, we will inform you of the final cost either by phone or discuss in-store.
+                            </b>
                         </div>
+
                     </div>
 
                     <div class="">
-                        <h5>About our repairs</h5>
-                        <ul class="d-flex flex-column gap-2" style="list-style: inside;">
-                            <li>1-year limited warranty</li>
-                            <li>Fast turnaround</li>
-                            <li>Free diagnostics</li>
-                            <li>Low price guarantee</li>
-                        </ul>
+                        <h5 class="mb-3">About our Repairs</h5>
+                        <div
+                        class="d-flex gap-4 justify-content-between pb-4 slider"
+                        style="
+                        overflow-x: auto;
+                        overflow-y: visible;
+                          scrollbar-width: none;
+                          -ms-overflow-style: none;
+                          scroll-snap-type: x proximity;
+                        "
+                      >
+                        <div
+                          class="card sliderCard rounded-3 firstCard"
+                          style="scroll-snap-align: start; background: #f7791e;"
+                        >
+                          <div class="card-body d-flex gap-3 align-items-center">
+                            <i class="fa-duotone fa-solid fa-gauge-max" style="font-size: 3rem"></i>
+                            <div class="d-flex flex-column gap-3">
+                                <h5 class="card-title m-0">Instant Repair</h5>
+                                <p>We offer same-day repairs, so you won't have to be without your device for long.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card sliderCard rounded-3" style="scroll-snap-align: start; background: #ff5758;">
+                          <div class="card-body d-flex gap-3 align-items-center" >
+                            <i class="fa-duotone fa-solid fa-hand-holding-circle-dollar" style="font-size: 3rem"></i>
+                            <div class="d-flex flex-column gap-3">
+                                <h5 class="card-title m-0">Affordable Pricing</h5>
+                                <p>Our repair services are priced competitively, ensuring you get quality without breaking the bank.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card sliderCard rounded-3" style="scroll-snap-align: start; background: #acc157;">
+                          <div class="card-body d-flex gap-3 align-items-center" >
+                            <i class="fa-duotone fa-solid fa-user-doctor" style="font-size: 3rem"></i>
+                              <div class="d-flex flex-column gap-3">
+                                <h5 class="card-title m-0">Expert Technicians</h5>
+                                <p>Our certified technicians are skilled in handling all types of repairs, ensuring your device is fixed right.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card sliderCard rounded-3" style="scroll-snap-align: start; background: #b36fcb;">
+                          <div class="card-body d-flex gap-3 align-items-center" >
+                            <i class="fa-duotone fa-solid fa-shield-check" style="font-size: 3rem"></i>
+                            <div class="d-flex flex-column gap-3">
+                                <h5 class="card-title m-0">Special Warranty</h5>
+                                <p>Enjoy peace of mind with our special warranty, covering all repairs and ensuring top-notch service.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card sliderCard rounded-3" style="scroll-snap-align: start; background: #d9c616;">
+                          <div class="card-body d-flex gap-3 align-items-center" >
+                            <i class="fa-duotone fa-solid fa-award" style="font-size: 3rem"></i>
+                            <div class="d-flex flex-column gap-3">
+                                <h5 class="card-title m-0">Genuine Spare Parts</h5>
+                                <p>We use only genuine parts for every repair, ensuring the longevity and performance of your device.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card sliderCard rounded-3" style="scroll-snap-align: start; background: #2abd76;">
+                          <div class="card-body d-flex gap-3 align-items-center" >
+                            <i class="fa-duotone fa-solid fa-magnifying-glass-plus" style="font-size: 3rem"></i>
+                            <div class="d-flex flex-column gap-3">
+                                <h5 class="card-title m-0">Free Diagnostic Service</h5>
+                                <p>We provide a free diagnostic service to identify the problem, so you know exactly what your device needs.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="heroNextPreBtn justify-content-center mx-auto" style="width: fit-content;">
+                        <i class="fa-solid fa-angle-left sliderPrevButton slider-control-btn" style="padding: 10px 25px;" type="button"></i>
+                        <i class="fa-solid fa-angle-right sliderNextButton slider-control-btn" style="padding: 10px 25px;" type="button"></i>
+                      </div>
                     </div>
                 </div>
             </div>
@@ -817,7 +891,7 @@
                 <p><a class="floating-icon" href=""><i style="padding-left: 2px;"
                             class="icon-2 fa-brands fa-facebook-f"></i></a></p>
                 <p><a class="floating-icon" href=""><i class="icon-3 fa-brands fa-instagram"></i></a></p>
-                <!-- <p><a class="floating-icon" href=""><i class="icon-4 fa-brands fa-youtube"></i></a></p> -->
+                <p><a class="floating-icon" href=""><i class="icon-4 fa-brands fa-youtube"></i></a></p>
             </div>
         </section>
 
@@ -842,33 +916,37 @@
                              <h4 style="font-weight: 600;">Our Stores</h4>
                             <p class="footerSubtext">Visit one of our locations for quick and reliable repair services. We're here to help with all your device needs!</p>
 
-                            <a href="mailto:cellnstyle888@gmail.com" target="_blank" class="d-flex gap-2 align-items-center">
+                            <!-- <a href="mailto:cellnstyle888@gmail.com" target="_blank" class="d-flex gap-2 align-items-center">
                                 <i class="fa-duotone fa-solid fa-envelope" style="color: var(--primaryColor);"></i>
                                 <span>cellnstyle888@gmail.com</span>
-                            </a>
+                            </a> -->
+
+                            <div class="d-flex position-relative flex-column gap-5">
+                                <div class="d-flex flex-column gap-2 ">
+                                    <h5>Store In Denton Area </h5>
+                                    <a href="http://maps.apple.com/?q=Cell+n+Style,+2201+S+Interstate+35,+Denton,+TX+76205,+United+States" target="_blank" class="d-flex gap-2 align-items-center">
+                                        <i class="fa-duotone fa-solid fa-map-location-dot" style="color: var(--primaryColor);"></i>
+                                        <span>2201 S Interstate 35, Denton, TX 76205</span>
+                                    </a>
+                                    <a href="tel:+19403809094" class="d-flex gap-2 align-items-center">
+                                        <i class="fa-duotone fa-solid fa-phone-arrow-up-right" style="color: var(--primaryColor);"></i>
+                                        <span>940-380-9094</span>
+                                    </a>
+                                </div>
+                                <div class="d-flex flex-column gap-2">
+                                    <h5>Store In Aubrey & Little Elm Area</h5>
+                                    <a href="http://maps.apple.com/?q=Cell+n+Style+Cell+Phone+%26+Computer+Repair+at+Aubrey,+26615+US-380+%23140,+Aubrey,+TX+76227,+United+States" target="_blank" class="d-flex gap-2 align-items-center">
+                                        <i class="fa-duotone fa-solid fa-map-location-dot" style="color: var(--primaryColor);"></i>
+                                        <span>26615 US-380 #140, Aubrey, TX 76227</span>
+                                    </a>
+                                    <a href="tel:+19729779115" class="d-flex gap-2 align-items-center">
+                                        <i class="fa-duotone fa-solid fa-phone-arrow-up-right" style="color: var(--primaryColor);"></i>
+                                        <span>972-977-9115</span>
+                                    </a>
+                                </div>
+                            </div>
         
-                            <div class="d-flex flex-column gap-2 ">
-                                <h5>Store 1</h5>
-                                <a href="http://maps.apple.com/?q=Cell+n+Style,+2201+S+Interstate+35,+Denton,+TX+76205,+United+States" target="_blank" class="d-flex gap-2 align-items-center">
-                                    <i class="fa-duotone fa-solid fa-map-location-dot" style="color: var(--primaryColor);"></i>
-                                    <span>2201 S Interstate 35, Denton, TX 76205</span>
-                                </a>
-                                <a href="tel:+19403809094" class="d-flex gap-2 align-items-center">
-                                    <i class="fa-duotone fa-solid fa-phone-arrow-up-right" style="color: var(--primaryColor);"></i>
-                                    <span>940-380-9094</span>
-                                </a>
-                            </div>
-                            <div class="d-flex flex-column gap-2">
-                                <h5>Store 2</h5>
-                                <a href="http://maps.apple.com/?q=Cell+n+Style+Cell+Phone+%26+Computer+Repair+at+Aubrey,+26615+US-380+%23140,+Aubrey,+TX+76227,+United+States" target="_blank" class="d-flex gap-2 align-items-center">
-                                    <i class="fa-duotone fa-solid fa-map-location-dot" style="color: var(--primaryColor);"></i>
-                                    <span>26615 US-380 #140, Aubrey, TX 76227</span>
-                                </a>
-                                <a href="tel:+19729779115" class="d-flex gap-2 align-items-center">
-                                    <i class="fa-duotone fa-solid fa-phone-arrow-up-right" style="color: var(--primaryColor);"></i>
-                                    <span>972-977-9115</span>
-                                </a>
-                            </div>
+
                         </div>
                     </div>
 
