@@ -67,7 +67,7 @@
     </div> -->
 
 
-    <header class="headerSection fixed-top" style="background: var(--fontColor);">
+    <header class="headerSection fixed-top" style="background: #231f20;">
 
 
         <!-- Navbar 1 - Bootstrap Brain Component -->
@@ -85,7 +85,7 @@
                             d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
                     </svg>
                 </button>
-                <div class="offcanvas offcanvas-end me-auto" style="background: var(--fontColor);" tabindex="-1" id="offcanvasNavbar"
+                <div class="offcanvas offcanvas-end me-auto" style="background: #231f20;" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
                         <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">Menu</h5>
@@ -94,7 +94,17 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-center flex-grow-1 gap-xl-4">
                             <li class="nav-item">
-                                <a class="nav-link text-nowrap" aria-current="page" href="#!">About</a>
+                                <a class="nav-link text-nowrap" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown has-megamenu">
+                                <a class="nav-link text-nowrap dropdown-toggle" href="#!" id="servicesDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Company</a>
+                                <ul class="dropdown-menu border  bsb-zoomIn megamenu"
+                                    aria-labelledby="servicesDropdown">
+                                    <li><a class="dropdown-item" href="#!">About</a></li>
+                                    <li><a class="dropdown-item" href="./career.html">Career</a></li>
+                                    <li><a class="dropdown-item" href="./contact.html">Contact</a></li>
+                                </ul>
                             </li>
                             <li class="nav-item dropdown has-megamenu">
                                 <a class="nav-link text-nowrap dropdown-toggle" href="#!" id="servicesDropdown" role="button"
@@ -106,11 +116,8 @@
                                             <div class="col-12 col-md-12 col-lg-4">
                                                 <img class="nav-repair-icon"
                                                     src="asset/images/icons/repair-tools-svgrepo-com.svg" alt="">
-                                                <h5>What can we help you with today?</h5>
-                                                <p class="pt-3">Lorem ipsum, dolor sit amet consectetur adipisicing
-                                                    elit. Est, repellendus?</p>
-                                                <p><a class="text-dark text-decoration-underline fw-bolder" href="#">Get
-                                                        Started →</a></p>
+                                                <h5>What can we fix for you?</h5>
+                                                <p class="pt-3">Select the device that needs fixing, and let our certified technicians handle the rest.</p>
                                             </div>
                                             <div class="col-12 col-md-12 col-lg-8">
                                                 <div class="text-center">
@@ -185,27 +192,15 @@
                                     </div>
                                 </ul>
                             </li>
-                            <li class="nav-item dropdown has-megamenu">
-                                <a class="nav-link text-nowrap dropdown-toggle" href="#!" id="servicesDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">Accessories</a>
-                                <ul class="dropdown-menu border  bsb-zoomIn megamenu"
-                                    aria-labelledby="servicesDropdown">
-                                    <li><a class="dropdown-item" href="#!">Case and Protection</a></li>
-                                    <li><a class="dropdown-item" href="#!">Battery</a></li>
-                                    <li><a class="dropdown-item" href="#!">Headsets and Speaker</a></li>
-                                    <li><a class="dropdown-item" href="#!">Power and Cables</a></li>
-                                </ul>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-nowrap" href="./products.html">Accessories</a>
                             </li>
-
-
                             <li class="nav-item">
                                 <a class="nav-link text-nowrap" href="./sell.html">Sell</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-nowrap" href="#!">Career</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-nowrap" href="./contact.html">Contact</a>
+                                <a class="nav-link text-nowrap" href="./blogs.html">Blogs</a>
                             </li>
 
                         </ul>
@@ -311,6 +306,8 @@
                         </p>
                         
                     </div>
+
+                    <iframe class="my-4" style="width: 100%; aspect-ratio: 3/1.7;" src="https://www.youtube.com/embed/Xmd0rUl3lgg?si=bUhx1ZPLDLn_Y06f&amp;start=22" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
                     <div class="paragraph">
                         <h5 class="paragraphTitle">5. Avoid Overloading the Processor</h5>
@@ -470,10 +467,10 @@
                                 <div class="d-flex flex-column gap-3">
                                     <a href="./termsConditions.html">Terms & Conditions</a>
                                     <a href="./privacyPolicy.html">Privacy Policy</a>
-                                    <a href="">About</a>
-                                    <a href="">Repair Service</a>
-                                    <a href="">Accessories</a>
-                                    <a href="">Sell</a>
+                                    <a href="./products.html">Accessories</a>
+                                    <a href="./sell.html">Sell</a>
+                                    <a href="./career.html">Career</a>
+                                    <a href="./contact.html">Contact</a>
                                 </div>
                             </div>
     

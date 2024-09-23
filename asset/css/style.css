@@ -213,6 +213,12 @@ input:focus,textarea:focus,select:focus{
   transform: rotate(180deg);
 }
 
+.dropdown-item:focus, .dropdown-item:hover, .dropdown-item:active {
+  font-weight: 600;
+  color: var(--primaryColor) !important;
+  background-color: var(--bs-dropdown-link-hover-bg) !important;
+}
+
 .book-li {
   margin-top: 13px;
   margin-bottom: 9px;
@@ -478,7 +484,7 @@ input:focus,textarea:focus,select:focus{
 
 .blogCardImage{
   width: 100%;
-  aspect-ratio: 3/1.5;
+  aspect-ratio: 2/1;
 }
 .commonBtn{
   width: fit-content;
@@ -928,7 +934,7 @@ input:focus,textarea:focus,select:focus{
 
 /* Sell page end */
 
-/* contact page start */
+/* Contact page start */
 
 .map{
   aspect-ratio: 3/2;
@@ -942,8 +948,43 @@ input:focus,textarea:focus,select:focus{
   }
 }
 
+/* Contact page end */
+
+/* Career page start */
+
+.openingsWrapper{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.eachOpening{
+  background: #eeeeee;
+}
+.eachOpening:hover{
+  transition: 0.5s;
+  background: var(--fontColor);
+  color: white !important;
+}
 
 
+
+@media (min-width: 768px) {
+
+  .career-subtext{
+    /* max-width: 500px; */
+    width: 50%;
+  }
+  .openingsWrapper{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+@media (min-width: 1200px) {
+
+  .openingsWrapper{
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+
+/* Career page end */
 
 
 
