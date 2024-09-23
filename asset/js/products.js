@@ -12,6 +12,7 @@ rangeInputs.forEach((eachRangeInput,index)=>{
   })
 })
 
+
 // filter details toggling 
 
 // const detailsTogglers = document.querySelectorAll(".detailsToggler");
