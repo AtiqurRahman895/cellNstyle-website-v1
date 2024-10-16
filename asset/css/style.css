@@ -35,6 +35,15 @@ body {
   border-radius: 10px;
 }
 
+.hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
 
 /* General CSS Start */
 .logo {
@@ -985,6 +994,21 @@ input:focus,textarea:focus,select:focus{
 }
 
 /* Career page end */
+
+/* Franchise page start */
+
+.highlightCardWrapper:hover{
+  transition: 0.8s;
+  background: var(--fontColor);
+  color: white;
+  border: none !important;
+}
+
+
+/* Franchise page end */
+
+
+
 
 
 
