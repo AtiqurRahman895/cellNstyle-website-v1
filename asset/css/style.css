@@ -1108,6 +1108,10 @@ input:focus,textarea:focus,select:focus{
     width: 1000px;
     margin: auto;
   }
+  .navbar .smallMegaMenu{
+    width: 500px;
+
+  }
 }
 
 @media(max-width: 991px) {
