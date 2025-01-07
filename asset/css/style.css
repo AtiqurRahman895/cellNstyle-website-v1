@@ -237,7 +237,7 @@ input:focus,textarea:focus,select:focus{
 
 .book-repair-btn {
   border: 1px solid var(--primaryColor);
-  padding: 10px 15px !important;
+  padding: 8px 15px !important;
   border-radius: 50px;
   font-weight: 600 !important;
 }
@@ -319,7 +319,7 @@ input:focus,textarea:focus,select:focus{
 
 .carousel-inner-btn {
   border: 0px;
-  padding: 15px 30px;
+  padding: 10px 25px;
   border: 1px solid var(--primaryColor);
   background-color: var(--primaryColor);
   font-weight: 400;
